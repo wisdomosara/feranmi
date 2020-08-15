@@ -1,0 +1,107 @@
+body {
+  background-color: #3ff0f0;
+  height: 900px;
+}
+
+main {
+  position: relative;
+}
+
+main .lower {
+  position: absolute;
+  height: 750px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .upper {
+  position: absolute;
+  height: 750px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+main .hero-text {
+  position: absolute;
+  top: 400px;
+  font-size: 8vw;
+  color: white;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  min-height: 500px !important;
+  width: 100%;
+  background-color: transparent;
+  z-index: 10;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .hero-text h3 {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+main .hero-text h1 {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 91px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+main .hero-text h5 {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+  letter-spacing: 0.5em;
+  color: #FFFFFF;
+}
+
+main .hero-text p {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+main .hero-text button {
+  height: 60px;
+  padding: 8px 20px;
+  background-color: #5132C0;
+  color: white;
+  font-size: 24px;
+  border: none;
+}
+
+main .hero-text .floating-img {
+  position: absolute;
+  top: 620px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=index.css.map */
