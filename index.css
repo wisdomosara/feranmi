@@ -82,6 +82,7 @@ main .nave .logo h2 {
 
 main .nave .logo h2 span {
   color: #5132C0;
+  font-weight: bolder;
 }
 
 main .nave .mobile {
@@ -128,7 +129,13 @@ main .nave .Big-nav li {
 
 @media (min-width: 768px) {
   main .nave .Big-nav li {
-    margin-left: 30px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  main .nave .Big-nav li {
+    margin-left: 5px;
   }
 }
 
