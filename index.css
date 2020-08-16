@@ -1,6 +1,7 @@
 body {
   background-color: #3ff0f0;
   height: 900px;
+  font-family: Source Sans Pro;
 }
 
 main {
@@ -176,7 +177,7 @@ main .hero-text h3 {
 main .hero-text .stroke-text {
   font-family: Source Sans Pro;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   padding: 0;
   margin: 0;
   font-size: 36px;
@@ -208,7 +209,7 @@ main .hero-text .stroke-text {
 }
 
 main .hero-text .stroke-text span {
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 0.01px white;
   -webkit-text-fill-color: transparent;
   font-family: Source Sans Pro;
 }
