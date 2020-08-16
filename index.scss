@@ -30,6 +30,16 @@ body{
     height: 900px;
     font-family: Source Sans Pro;
 }
+.mobile-nav{
+    position: absolute;
+    top:70px;
+    right: 100%;
+    z-index: 100;
+    background-color: #5132C0;
+    width: 100%;
+    height: 100vh;
+    transition: 0.4s
+}
 main{
     position: relative;
     width: 100%;
@@ -62,6 +72,7 @@ main{
         
         z-index:1
     }
+    
     .upper-mobile{position: absolute;
         height: 502px;
         @include sm {
@@ -88,7 +99,9 @@ main{
         }
         .close {
             .line1{
-             transform: rotate(-45deg) translate(-9px, 6px) !important;
+             transform: rotate(-45deg) translate(-5px, 6px) !important;
+             z-index:100 !important;
+             background-color: #FFFFFF !important
              } 
          }
          .close {
@@ -98,7 +111,7 @@ main{
         }
         .close {
             .line3{
-            transform: rotate(45deg) translate(-7px, 6px);
+            transform: rotate(45deg) translate(-6px, -7px);
             }
         }
         
@@ -108,10 +121,11 @@ main{
             .line1{
                 width: 24px;
                 height: 3px;
-                color:white;
+                
                 background-color: #FFFFFF;
                 margin-bottom: 6px;
-                z-index: 10
+                
+                transition: 0.4s;
             }
             
             
@@ -119,7 +133,8 @@ main{
                 width: 18px;
                 height: 3px;
                 margin-bottom: 6px;
-                color:white;
+                
+                transition: 0.4s;
                 background-color: #FFFFFF;
             }
             
@@ -127,9 +142,10 @@ main{
             .line3{
                 width: 24px;
                 height: 3px;
+                transition: 0.4s;
                 margin-bottom: 6px;
 
-                color:white;
+                
                 background-color: #FFFFFF;
             }
             
