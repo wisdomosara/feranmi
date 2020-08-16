@@ -1,28 +1,140 @@
+
+//small tablets
+$screen-sm-min : 576px;
+$screen-md-min : 768px;
+$screen-lg-min : 992px;
+$screen-xl-min : 1200px;
+
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
 body{
     background-color: rgb(63, 240, 240);
     height: 900px;
 }
 main{
     position: relative;
-
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
     .lower{position: absolute;
-        height: 750px;
-        object-fit: cover;
+        display: none;
+        @include sm {
+            display: block;
+            height: 750px;
+            object-fit: cover;
+        }
+        
+    }
+    .lower-mobile{position: absolute;
+        height: 502px;
+        
+        @include sm {
+            display: none
+        }
+        
     }
     .upper{position: absolute;
-        height: 750px;
-        object-fit: cover;
-        z-index:0
+        display: none;
+        @include sm {
+            height: 750px;
+            display: block;
+            object-fit: cover;
+        }
+        
+        z-index:1
+    }
+    .upper-mobile{position: absolute;
+        height: 502px;
+        @include sm {
+            display: none
+        }
+        z-index:1
+    }
+    .nave{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        color: white;
+        .logo{
+            font-weight: bolder;
+            h2{
+                font-weight: bold;
+                font-size: 18px !important;
+                span{
+                color: #5132C0;
+                }
+            }
+        }
+        .mobile{
+            margin-top: -5px;
+            transform: rotate(180deg);
+            .line1{
+                width: 24px;
+                height: 5px;
+                color:white;
+                background-color: #FFFFFF;
+                margin-bottom: 6px;
+                z-index: 10
+            }
+            .line2{
+                width: 20px;
+                height: 5px;
+                margin-bottom: 6px;
+                color:white;
+                background-color: #FFFFFF;
+            }
+            .line3{
+                width: 24px;
+                height: 5px;
+                margin-bottom: 6px;
+
+                color:white;
+                background-color: #FFFFFF;
+            }
+        }
+        .Big-nav{
+            li{
+                list-style-type: none;
+                float: left;
+                margin-left: 30px;
+                a{
+                    color: white;
+                    text-decoration: none
+                }
+            }
+        }
+
     }
     .hero-text{
         position: absolute;
-        top:400px;
-        font-size:8vw;
+        top:250px;
         color: white;
         transform: translate(-50%,-50%);
         display: flex;
         left: 50%;
-        min-height: 500px !important;
+        @include sm {
+            top:400px;
+        }
+        max-height: 500px !important;
         width: 100%;
         background-color: transparent;
         z-index: 10;
@@ -30,54 +142,113 @@ main{
         align-items: center;
         justify-content: center;
         h3{
-             font-family: Source Sans Pro;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 48px;
-            line-height: 60px;
-            
-            color: #FFFFFF;
-        }
-        h1{
             font-family: Source Sans Pro;
             font-style: normal;
-            font-weight: bold;
-            font-size: 72px;
-            line-height: 91px;
-            /* identical to box height */
+            font-weight: normal;
+            font-size: 24px;
+            @media (max-width:290px) {
+                font-size: 18px
+            }
+            margin: 0;
+            padding: 0;
             color: #FFFFFF;
+        }
+        .stroke-text{
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: normal;
+            padding: 0;
+            margin: 0;
+            font-size: 36px;
+            @media (max-width:290px) {
+                font-size: 25px
+            }
+            @include sm {
+                font-size: 40px;
+                line-height: 91px;
+            }
+            @include md {
+                font-size: 60px
+            }
+
+            @include xl {
+                font-size: 72px
+            }
+            span{
+                -webkit-text-stroke: 1px white;
+                -webkit-text-fill-color: transparent;
+                font-family: Source Sans Pro
+            }
+            
         }
         h5{
             font-family: Source Sans Pro;
             font-style: normal;
             font-weight: bold;
             font-size: 18px;
-            line-height: 23px;
-            /* identical to box height */
+            text-align: center;
             letter-spacing: 0.5em;
             color: #FFFFFF;
+            margin-bottom: 40px;
         }
         p{
             font-family: Source Sans Pro;
             font-style: normal;
             font-weight: normal;
-            font-size: 24px;
+            font-size: 16px;
+            @media (max-width:290px) {
+                font-size: 14px
+            }
+            @include sm{
+                font-size: 24px
+            }
+            text-align: center;
             line-height: 30px;
-
+            margin-bottom: 20px;
             color: #FFFFFF;
         }
         button{
-            height: 60px;
+            height: 40px;
             padding:8px 20px;
             background-color: #5132C0;
             color: white;
-            font-size: 24px;
-            border:none
+            font-size: 14px;
+            border:none;
+            @include sm {
+                font-size: 24px;
+                height: 60px
+            }
+            margin-bottom: 20px
         }
+        .icons{
+            min-height: 50px !important;
+            img{
+                font-size: 21px !important;
+                height: 21px !important;
+                margin-right: 20px;
+                margin-top: 20px
+            }
+        }
+
         .floating-img{
             position: absolute;
-            top: 620px;
-            left: 50%;
+            top: 410px;
+            left: 49.9%;
+            width: 90px;
+            @media (max-width:290px) {
+                top: 400px;
+            }
+            @include sm {
+                width: 220px;
+                top:530px;
+            }
+            @include md {
+                width: 220px;
+                top:530px
+            }
+            @include lg{
+                top:520px
+            }
             transform: translate(-50%,-50%)
         }
     }

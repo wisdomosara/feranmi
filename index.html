@@ -10,21 +10,39 @@
     <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.min.css">
 </head>
 <body>
-    <main>
-        <img src="./images/Vector 1.png" class="lower" width="100%" height="100%">
-        <img src="./images/Vector 2.png" class="upper" width="100%" height="100%">
-        <div class="hero-text">
-            <h3>Hi, I’m  <span style="font-weight:bolder">Feranmi</span></h3>
-            <div class="d-flex align-items-baseline">
-                <canvas id="myCanvas" width="576px" height="85px">
-                Your browser does not support the canvas element.
-                </canvas>
-                <h1>DESIGNER</h1>
+    <main >
+        <img src="./images/Vector 1.png" class="lower d-none d-sm-block" width="100%" height="100%">
+        <img src="./images/Vector 2.png" class="upper d-none d-sm-block" width="100%" height="100%">
+        <img src="./images/Vector 4 (1).png" class="upper-mobile d-block d-sm-none" width="100%" height="100%">
+        <img src="./images/Vector 3 (1).png" class="lower-mobile d-block d-sm-none" width="100%" height="100%">
+        <div class="nave">
+            <div class="d-flex justify-content-between align-items-center pt-3 pt-sm-5 container">
+                <div class="logo">
+                    <h2>FERANMI<span>OLOWO</span></h2>
+                </div>
+                <div class="Big-nav d-none d-sm-block">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="mobile d-sm-none">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </div>
-            <h5 class="mb-5">Based in Lagos, Nigeria</h5>
-            <p class="mb-4">I solve problems using digital products.</p>
+        </div>
+        <div class="hero-text px-2">
+            <h3>Hi, I’m  <span style="font-weight:bolder">Feranmi</span></h3>
+            
+            <div class="stroke-text text-center d-flex flex-column flex-sm-row"><span class="mr-sm-2">DIGITAL PRODUCT</span>DESIGNER</div>
+            <h5>Based in Lagos, Nigeria</h5>
+            <p>I solve problems using digital products.</p>
             <button>Contact Me</button>
-            <div class="icon-holder">
+            <div class="icons d-none d-sm-flex">
                 <img src="./images/Vector (33).png" width="21px">
                 <img src="./images/Icon awesome-twitter (3).png" width="21px">
                 <img src="./images/Icon awesome-linkedin-in (2).png" width="21px">
