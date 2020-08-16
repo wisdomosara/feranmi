@@ -16,6 +16,20 @@ body {
   transition: 0.4s;
 }
 
+.mobile-nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav ul li {
+  list-style: none;
+}
+
+.mobile-nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 main {
   position: relative;
   width: 100%;

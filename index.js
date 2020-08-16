@@ -10,6 +10,7 @@ function myFunction(x) {
         nav.style.right = "100%"
     }
     
+    
 }
     
   
