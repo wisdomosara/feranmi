@@ -85,14 +85,14 @@ main .nave .logo h2 span {
 }
 
 main .nave .mobile {
-  margin-top: -5px;
+  margin-top: -15px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
 main .nave .mobile .line1 {
   width: 24px;
-  height: 5px;
+  height: 3px;
   color: white;
   background-color: #FFFFFF;
   margin-bottom: 6px;
@@ -100,8 +100,8 @@ main .nave .mobile .line1 {
 }
 
 main .nave .mobile .line2 {
-  width: 20px;
-  height: 5px;
+  width: 18px;
+  height: 3px;
   margin-bottom: 6px;
   color: white;
   background-color: #FFFFFF;
@@ -109,7 +109,7 @@ main .nave .mobile .line2 {
 
 main .nave .mobile .line3 {
   width: 24px;
-  height: 5px;
+  height: 3px;
   margin-bottom: 6px;
   color: white;
   background-color: #FFFFFF;
@@ -118,12 +118,41 @@ main .nave .mobile .line3 {
 main .nave .Big-nav li {
   list-style-type: none;
   float: left;
-  margin-left: 30px;
+}
+
+@media (min-width: 576px) {
+  main .nave .Big-nav li {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  main .nave .Big-nav li {
+    margin-left: 30px;
+  }
 }
 
 main .nave .Big-nav li a {
-  color: white;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+  color: #FFFFFF;
   text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  main .nave .Big-nav li a {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  main .nave .Big-nav li a {
+    font-size: 18px;
+  }
 }
 
 main .hero-text {
@@ -168,16 +197,26 @@ main .hero-text h3 {
   color: #FFFFFF;
 }
 
+main .hero-text h3 span {
+  font-weight: bolder;
+}
+
 @media (max-width: 290px) {
   main .hero-text h3 {
     font-size: 18px;
   }
 }
 
+@media (min-width: 576px) {
+  main .hero-text h3 {
+    font-size: 48px;
+  }
+}
+
 main .hero-text .stroke-text {
   font-family: Source Sans Pro;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   padding: 0;
   margin: 0;
   font-size: 36px;
@@ -209,7 +248,7 @@ main .hero-text .stroke-text {
 }
 
 main .hero-text .stroke-text span {
-  -webkit-text-stroke: 0.01px white;
+  -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: transparent;
   font-family: Source Sans Pro;
 }
@@ -294,20 +333,20 @@ main .hero-text .floating-img {
 @media (min-width: 576px) {
   main .hero-text .floating-img {
     width: 220px;
-    top: 530px;
+    top: 540px;
   }
 }
 
 @media (min-width: 768px) {
   main .hero-text .floating-img {
     width: 220px;
-    top: 530px;
+    top: 540px;
   }
 }
 
 @media (min-width: 992px) {
   main .hero-text .floating-img {
-    top: 520px;
+    top: 530px;
   }
 }
 /*# sourceMappingURL=index.css.map */

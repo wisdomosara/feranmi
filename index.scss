@@ -86,26 +86,26 @@ main{
             }
         }
         .mobile{
-            margin-top: -5px;
+            margin-top: -15px;
             transform: rotate(180deg);
             .line1{
                 width: 24px;
-                height: 5px;
+                height: 3px;
                 color:white;
                 background-color: #FFFFFF;
                 margin-bottom: 6px;
                 z-index: 10
             }
             .line2{
-                width: 20px;
-                height: 5px;
+                width: 18px;
+                height: 3px;
                 margin-bottom: 6px;
                 color:white;
                 background-color: #FFFFFF;
             }
             .line3{
                 width: 24px;
-                height: 5px;
+                height: 3px;
                 margin-bottom: 6px;
 
                 color:white;
@@ -116,10 +116,30 @@ main{
             li{
                 list-style-type: none;
                 float: left;
-                margin-left: 30px;
+                @include sm {
+                    margin-left: 20px
+                }
+                @include md{
+                    margin-left: 30px
+                }
                 a{
-                    color: white;
-                    text-decoration: none
+                    font-family: Source Sans Pro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 23px;
+                    /* identical to box height */
+
+
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    @include sm{
+                        font-size: 14px;
+
+                    }
+                    @include md {
+                        font-size: 18px
+                    }
                 }
             }
         }
@@ -147,8 +167,14 @@ main{
             font-style: normal;
             font-weight: normal;
             font-size: 24px;
+            span{
+                font-weight: bolder
+            }
             @media (max-width:290px) {
                 font-size: 18px
+            }
+            @include sm{
+                font-size: 48px
             }
             margin: 0;
             padding: 0;
@@ -157,7 +183,7 @@ main{
         .stroke-text{
             font-family: Source Sans Pro;
             font-style: normal;
-            font-weight: bold;
+            font-weight: normal;
             padding: 0;
             margin: 0;
             font-size: 36px;
@@ -176,7 +202,7 @@ main{
                 font-size: 72px
             }
             span{
-                -webkit-text-stroke: 0.01px white;
+                -webkit-text-stroke: 1px white;
                 -webkit-text-fill-color: transparent;
                 font-family: Source Sans Pro;
             }
@@ -241,14 +267,14 @@ main{
             }
             @include sm {
                 width: 220px;
-                top:530px;
+                top:540px;
             }
             @include md {
                 width: 220px;
-                top:530px
+                top:540px
             }
             @include lg{
-                top:520px
+                top:530px
             }
             transform: translate(-50%,-50%)
         }
