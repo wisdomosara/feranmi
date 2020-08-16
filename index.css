@@ -85,6 +85,20 @@ main .nave .logo h2 span {
   font-weight: bolder;
 }
 
+main .nave .close .line1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) !important;
+          transform: rotate(-45deg) translate(-9px, 6px) !important;
+}
+
+main .nave .close .line2 {
+  opacity: 0;
+}
+
+main .nave .close .line3 {
+  -webkit-transform: rotate(45deg) translate(-7px, 6px);
+          transform: rotate(45deg) translate(-7px, 6px);
+}
+
 main .nave .mobile {
   margin-top: -15px;
   -webkit-transform: rotate(180deg);
@@ -135,7 +149,7 @@ main .nave .Big-nav li {
 
 @media (min-width: 992px) {
   main .nave .Big-nav li {
-    margin-left: 5px;
+    margin-left: 55px;
   }
 }
 
@@ -264,11 +278,17 @@ main .hero-text h5 {
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   letter-spacing: 0.5em;
   color: #FFFFFF;
   margin-bottom: 40px;
+}
+
+@media (min-width: 576px) {
+  main .hero-text h5 {
+    font-size: 18px;
+  }
 }
 
 main .hero-text p {
