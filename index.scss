@@ -25,10 +25,11 @@ $screen-xl-min : 1200px;
         @content;
     }
 }
-body{
-    background-color: rgb(63, 240, 240);
-    height: 900px;
+body, html{
     font-family: Source Sans Pro;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 .mobile-nav{
     position: absolute;
@@ -374,21 +375,112 @@ main{
         position: absolute;
         top: 14%;
         left:0;
-        font-size: 64px;
-        font-weight: normal;
-        
-        @include sm {
-            font-size: 90px;
-        }
         @include md {
             top:7%;
-            font-size: 120px;
         }
-        @include lg {
-            font-size: 144px;
-        }
-        -webkit-text-stroke: 1px #5132C0;
-                -webkit-text-fill-color: transparent;
-                font-family: Source Sans Pro;
     }
+    button{
+        width: 214px;
+        padding: 7px 35px;
+        background-color: transparent;
+        border-style: none;
+        margin-top: 20px;
+        border: 1px solid #5132C0;
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+
+        color: #5132C0;
+        @include md{
+            width: 262px;
+            padding: 15px 35px;
+        }
+    }
+}
+#skills{
+    position: relative;
+    .poster{
+        position: absolute;
+        top: 0;
+        right:0;
+    }
+    .skills-text{
+        padding-top:50px;
+        @include md{
+            padding-top: 124px;
+
+        }
+    }p{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #3E3E3E;
+    }
+    .skills-grid{
+        P{
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 23px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #3E3E3E;
+
+        }
+        justify-content: space-evenly;
+        padding: 1px 20px;
+        @include md{
+            padding:0 !important
+        }
+        .skills-item{
+            width: 267px;
+            @media (max-width:300px) {
+                width: 100%;
+                min-height: 320px;
+            }
+            height: 100%;
+            background: #FFFFFF;
+            border: 1px solid #5132C0;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            @include sm{
+                width: 257px
+            }
+            @include md{
+                width: 267px;
+            }
+            h3{
+                font-family: Source Sans Pro;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 30px;
+
+                color: #3E3E3E;
+            }
+            p{
+                font-family: Source Sans Pro;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 23px;
+                text-align: center;
+                height: 100px;
+                color: #3E3E3E;
+            }
+        }
+    }
+
 }
