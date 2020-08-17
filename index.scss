@@ -365,6 +365,7 @@ main{
     p {margin-bottom: 12px;
         font-size: 18px;
         line-height: 23px;
+        color: #3E3E3E;
         @include md{
             width: 60% !important;
         }

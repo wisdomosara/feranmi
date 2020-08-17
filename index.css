@@ -456,6 +456,7 @@ main .hero-text .floating-img {
   margin-bottom: 12px;
   font-size: 18px;
   line-height: 23px;
+  color: #3E3E3E;
 }
 
 @media (min-width: 768px) {
