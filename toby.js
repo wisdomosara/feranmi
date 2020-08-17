@@ -22,39 +22,43 @@ let inventory = [
   ]
   
   
-  function shouldWeOrderThisCandy(array) {
-    
+  function candyOrderQuantity(array, candyName) {
+    let order = 0
+    let filtered = []
     for (let i = 0; i < array.length; i++) {
        if(array[i].candy === candyName) {
            filtered.push(array[i])
         }
     }
     if(filtered.length >= 1) {
-          if (filtered[0].inStock < filtered[0].weeklyAverage) {
-            return true
+          if (filtered[0].inStock > filtered[0].weeklyAverage) {
+                order = 0;
             }else {
-                return false
+               order = filtered[0].weeklyAverage*2;
+              
             }
         }
         else {
-                return false
+                order = 0;
         }
+    let cand = {
+        candy : candyName,
+        order : order
+    }
+    return cand
 }
   
-  console.log(shouldWeOrderThisCandy(inventory, "Twizzlers")); //->  true
-  console.log(shouldWeOrderThisCandy(inventory, "Sour Patch Kids")); //-> true
-  console.log(shouldWeOrderThisCandy(inventory, "Milk Duds")); //->  false
-  console.log(shouldWeOrderThisCandy(inventory, "Now and Laters")); //->  false
-  console.log(shouldWeOrderThisCandy(inventory, "Broccoli Bits")); //->  false
+  
 
 function allCandyOrders(array) {
-    let filtered = []
-    
+    let final = {}
+    for (let candy of array) {
+        let result = candyOrderQuantity(array, candy.candy)
+        let name = result.candy;
+        let orders = result.order
+        final[name] = orders
+    }
+    console.log(final)
+
 }
  allCandyOrders(inventory)
-//  {
-//    "Twizzlers": 400,
-//    "Sour Patch Kids": 200,
-//    "Milk Duds": 0,
-//    "Now and Laters": 0
-//  }

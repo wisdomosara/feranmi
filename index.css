@@ -5,6 +5,22 @@ body, html {
   max-width: 1440px;
 }
 
+@media (min-width: 576px) {
+  .scrolly {
+    background-color: #FFFFFF !important;
+    color: black !important;
+    position: fixed !important;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .scrolly .Big-nav a {
+    color: black !important;
+  }
+  .scrolly .Big-nav .logo {
+    color: black !important;
+  }
+}
+
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -99,13 +115,22 @@ main .upper-mobile {
 }
 
 main .nave {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   padding-top: -10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   z-index: 100;
-  color: black;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  main .nave {
+    background-color: rgba(0, 0, 0, 0.479);
+    position: fixed;
+  }
 }
 
 main .nave .logo {
@@ -126,7 +151,6 @@ main .nave .close .line1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 6px) !important;
           transform: rotate(-45deg) translate(-5px, 6px) !important;
   z-index: 100 !important;
-  background-color: black !important;
 }
 
 main .nave .close .line2 {
@@ -147,7 +171,7 @@ main .nave .mobile {
 main .nave .mobile .line1 {
   width: 24px;
   height: 3px;
-  background-color: black;
+  background-color: white;
   margin-bottom: 6px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -159,7 +183,7 @@ main .nave .mobile .line2 {
   margin-bottom: 6px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background-color: black;
+  background-color: white;
 }
 
 main .nave .mobile .line3 {
@@ -168,7 +192,7 @@ main .nave .mobile .line3 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   margin-bottom: 6px;
-  background-color: black;
+  background-color: white;
 }
 
 main .nave .Big-nav li {
@@ -201,7 +225,7 @@ main .nave .Big-nav li a {
   font-size: 18px;
   line-height: 23px;
   /* identical to box height */
-  color: #FFFFFF;
+  color: white;
   text-decoration: none;
 }
 

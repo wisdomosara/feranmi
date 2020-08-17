@@ -8,12 +8,13 @@ navLinks.forEach(link => link.addEventListener("click", function() {
     if(clicked) {
         
         nav.style.right = "0"
-        document.querySelector(".nave").style.backgroundColor ="transparent";
+        document.querySelector(".nave").style.backgroundColor = "transparent";
         document.querySelector(".logo span").style.color = "white"
+        document.querySelector(".logo").style.color = "white"
     }else {
         nav.style.right = "100%";
         document.querySelector(".logo span").style.color = "#5132C0"
-        document.querySelector(".nave").style.backgroundColor ="rgba(255, 255, 255, 0.5)";
+        document.querySelector(".nave").style.backgroundColor = "rgba(0, 0, 0, 0.479)";
     }
 }))
 function myFunction(x) {
@@ -24,13 +25,22 @@ function myFunction(x) {
         nav.style.right = "0"
         document.querySelector(".logo span").style.color = "white"
         document.querySelector(".nave").style.backgroundColor ="transparent";
+        document.querySelector(".logo").style.color = "white"
     }else {
         nav.style.right = "100%";
         document.querySelector(".logo span").style.color = "#5132C0"
-        document.querySelector(".nave").style.backgroundColor ="rgba(255, 255, 255, 0.5)";
+        document.querySelector(".nave").style.backgroundColor ="rgba(0, 0, 0, 0.5)";
+        
     }
-
-    
 }
     
-  
+window.addEventListener("scroll", function() {
+    let name = document.querySelector(".name");
+    let distanceTop = name.getBoundingClientRect().top;
+    if(distanceTop < 200 ) {
+        document.querySelector(".nave").classList.add("scrolly")
+        console.log("in viw")
+    }else {
+        document.querySelector(".nave").classList.remove("scrolly")
+    }
+})

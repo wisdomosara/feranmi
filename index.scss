@@ -31,6 +31,23 @@ body, html{
     margin: 0 auto;
     max-width: 1440px;
 }
+.scrolly{
+    @include sm{
+        background-color: #FFFFFF !important;
+        color: black !important;
+        position: fixed !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+        .Big-nav{
+            a{
+            color: black !important;
+        }
+        .logo{
+            color: black !important
+            }
+        }
+        
+    }
+}
 .mobile-nav{
     position: fixed;
     top:0;
@@ -98,13 +115,18 @@ main{
         z-index:1
     }
     .nave{
-        position: fixed;
+        position: absolute;
         top: 0;
         width: 100%;
         padding-top: -10px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: transparent;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+        @media (max-width: 576px) {
+            background-color: rgba(0, 0, 0, 0.479);
+            position: fixed;
+        }
         z-index: 100;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         .logo{
             font-weight: bolder;
             h2{
@@ -120,7 +142,6 @@ main{
             .line1{
              transform: rotate(-45deg) translate(-5px, 6px) !important;
              z-index:100 !important;
-             background-color: rgb(0, 0, 0) !important
              } 
          }
          .close {
@@ -141,7 +162,7 @@ main{
                 width: 24px;
                 height: 3px;
                 
-                background-color: rgb(0, 0, 0);
+                background-color: white;
                 margin-bottom: 6px;
                 
                 transition: 0.4s;
@@ -154,7 +175,7 @@ main{
                 margin-bottom: 6px;
                 
                 transition: 0.4s;
-                background-color: rgb(0, 0, 0);
+                background-color: white;
             }
             
              
@@ -165,7 +186,7 @@ main{
                 margin-bottom: 6px;
 
                 
-                background-color: rgb(0, 0, 0);
+                background-color: white;
             }
             
         }
@@ -191,7 +212,7 @@ main{
                     /* identical to box height */
 
 
-                    color: #FFFFFF;
+                    color: rgb(255, 255, 255);
                     text-decoration: none;
                     @include sm{
                         font-size: 14px;
