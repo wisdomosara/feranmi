@@ -6,7 +6,8 @@ body {
 
 .mobile-nav {
   position: absolute;
-  top: 70px;
+  top: 0;
+  padding-top: 20vh;
   right: 100%;
   z-index: 100;
   background-color: #5132C0;
@@ -33,8 +34,15 @@ body {
 main {
   position: relative;
   width: 100%;
+  height: 502px;
   margin: 0 auto;
   max-width: 1440px;
+}
+
+@media (min-width: 576px) {
+  main {
+    height: 750px;
+  }
 }
 
 main .lower {
@@ -102,7 +110,7 @@ main .nave .logo {
 }
 
 main .nave .logo h2 {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 18px !important;
 }
 
@@ -374,7 +382,7 @@ main .hero-text .icons img {
 
 main .hero-text .floating-img {
   position: absolute;
-  top: 410px;
+  top: 425px;
   left: 49.9%;
   width: 90px;
   -webkit-transform: translate(-50%, -50%);
@@ -403,7 +411,81 @@ main .hero-text .floating-img {
 
 @media (min-width: 992px) {
   main .hero-text .floating-img {
-    top: 530px;
+    top: 540px;
+  }
+}
+
+.name {
+  padding-top: 50px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 576px) {
+  .name {
+    padding-top: 120px;
+    font-size: 24px;
+  }
+}
+
+.profile-text {
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.profile-text p {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+@media (min-width: 768px) {
+  .profile-text p {
+    width: 60% !important;
+  }
+}
+
+.profile-text .poster {
+  position: absolute;
+  top: 6%;
+  left: 0;
+  font-size: 64px;
+  font-weight: normal;
+  opacity: 0.3;
+  -webkit-text-stroke: 1px #5132C0;
+  -webkit-text-fill-color: transparent;
+  font-family: Source Sans Pro;
+}
+
+@media (min-width: 576px) {
+  .profile-text .poster {
+    font-size: 90px;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-text .poster {
+    font-size: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile-text .poster {
+    font-size: 144px;
   }
 }
 /*# sourceMappingURL=index.css.map */

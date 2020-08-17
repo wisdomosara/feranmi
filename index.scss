@@ -32,7 +32,8 @@ body{
 }
 .mobile-nav{
     position: absolute;
-    top:70px;
+    top:0;
+    padding-top:20vh;
     right: 100%;
     z-index: 100;
     background-color: #5132C0;
@@ -54,6 +55,10 @@ body{
 main{
     position: relative;
     width: 100%;
+    height: 502px;
+    @include sm {
+        height: 750px
+    }
     margin: 0 auto;
     max-width: 1440px;
     .lower{position: absolute;
@@ -100,7 +105,7 @@ main{
         .logo{
             font-weight: bolder;
             h2{
-                font-weight: bold;
+                font-weight: bolder;
                 font-size: 18px !important;
                 span{
                 color: #5132C0;
@@ -314,7 +319,7 @@ main{
 
         .floating-img{
             position: absolute;
-            top: 410px;
+            top: 425px;
             left: 49.9%;
             width: 90px;
             @media (max-width:290px) {
@@ -329,9 +334,55 @@ main{
                 top:540px
             }
             @include lg{
-                top:530px
+                top:540px
             }
             transform: translate(-50%,-50%)
         }
+    }
+}
+.name{
+    padding-top: 50px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    @include sm{
+        padding-top: 120px;
+        font-size: 24px
+    }
+}
+.profile-text{
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    p {margin-bottom: 12px;
+        font-size: 18px;
+        line-height: 23px;
+        @include md{
+            width: 60% !important;
+        }
+    }
+    .poster{
+        position: absolute;
+        top: 6%;
+        left:0;
+        font-size: 64px;
+        font-weight: normal;
+        opacity: 0.3;
+        @include sm {
+            font-size: 90px;
+        }
+        @include md {
+            font-size: 120px;
+        }
+        @include lg {
+            font-size: 144px;
+        }
+        -webkit-text-stroke: 1px #5132C0;
+                -webkit-text-fill-color: transparent;
+                font-family: Source Sans Pro;
     }
 }
