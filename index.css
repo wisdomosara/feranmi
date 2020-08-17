@@ -419,6 +419,11 @@ main .hero-text .floating-img {
   padding-top: 50px;
   font-size: 18px;
   margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.name span {
+  font-weight: bolder;
 }
 
 @media (min-width: 576px) {
@@ -461,11 +466,10 @@ main .hero-text .floating-img {
 
 .profile-text .poster {
   position: absolute;
-  top: 6%;
+  top: 14%;
   left: 0;
   font-size: 64px;
   font-weight: normal;
-  opacity: 0.3;
   -webkit-text-stroke: 1px #5132C0;
   -webkit-text-fill-color: transparent;
   font-family: Source Sans Pro;
@@ -479,6 +483,7 @@ main .hero-text .floating-img {
 
 @media (min-width: 768px) {
   .profile-text .poster {
+    top: 7%;
     font-size: 120px;
   }
 }

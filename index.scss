@@ -344,6 +344,10 @@ main{
     padding-top: 50px;
     font-size: 18px;
     margin-bottom: 40px;
+    font-weight: normal;
+    span{
+        font-weight: bolder;
+    }
     @include sm{
         padding-top: 120px;
         font-size: 24px
@@ -367,15 +371,16 @@ main{
     }
     .poster{
         position: absolute;
-        top: 6%;
+        top: 14%;
         left:0;
         font-size: 64px;
         font-weight: normal;
-        opacity: 0.3;
+        
         @include sm {
             font-size: 90px;
         }
         @include md {
+            top:7%;
             font-size: 120px;
         }
         @include lg {
