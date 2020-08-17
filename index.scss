@@ -32,7 +32,7 @@ body, html{
     max-width: 1440px;
 }
 .mobile-nav{
-    position: absolute;
+    position: fixed;
     top:0;
     padding-top:20vh;
     right: 100%;
@@ -98,9 +98,11 @@ main{
         z-index:1
     }
     .nave{
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100%;
+        padding-top: -10px;
+        background-color: rgba(62, 62, 62, 0.473);
         z-index: 100;
         color: white;
         .logo{

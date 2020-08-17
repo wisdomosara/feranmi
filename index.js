@@ -8,10 +8,12 @@ navLinks.forEach(link => link.addEventListener("click", function() {
     if(clicked) {
         
         nav.style.right = "0"
+        document.querySelector(".nave").style.backgroundColor ="transparent";
         document.querySelector(".logo span").style.color = "white"
     }else {
         nav.style.right = "100%";
         document.querySelector(".logo span").style.color = "#5132C0"
+        document.querySelector(".nave").style.backgroundColor ="rgba(62, 62, 62, 0.473)";
     }
 }))
 function myFunction(x) {
@@ -21,9 +23,11 @@ function myFunction(x) {
         
         nav.style.right = "0"
         document.querySelector(".logo span").style.color = "white"
+        document.querySelector(".nave").style.backgroundColor ="transparent";
     }else {
         nav.style.right = "100%";
         document.querySelector(".logo span").style.color = "#5132C0"
+        document.querySelector(".nave").style.backgroundColor ="rgba(62, 62, 62, 0.473)";
     }
 
     

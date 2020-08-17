@@ -6,7 +6,7 @@ body, html {
 }
 
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   padding-top: 20vh;
   right: 100%;
@@ -99,9 +99,11 @@ main .upper-mobile {
 }
 
 main .nave {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
+  padding-top: -10px;
+  background-color: rgba(62, 62, 62, 0.473);
   z-index: 100;
   color: white;
 }
