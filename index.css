@@ -488,7 +488,7 @@ main .hero-text .floating-img {
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 30px;
   color: #5132C0;
 }
@@ -497,6 +497,7 @@ main .hero-text .floating-img {
   .profile-text button {
     width: 262px;
     padding: 15px 35px;
+    font-size: 24px;
   }
 }
 
