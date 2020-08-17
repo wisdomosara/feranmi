@@ -103,9 +103,9 @@ main .nave {
   top: 0;
   width: 100%;
   padding-top: -10px;
-  background-color: rgba(62, 62, 62, 0.473);
+  background-color: rgba(255, 255, 255, 0.5);
   z-index: 100;
-  color: white;
+  color: black;
 }
 
 main .nave .logo {
@@ -126,7 +126,7 @@ main .nave .close .line1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 6px) !important;
           transform: rotate(-45deg) translate(-5px, 6px) !important;
   z-index: 100 !important;
-  background-color: #FFFFFF !important;
+  background-color: black !important;
 }
 
 main .nave .close .line2 {
@@ -147,7 +147,7 @@ main .nave .mobile {
 main .nave .mobile .line1 {
   width: 24px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: black;
   margin-bottom: 6px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -159,7 +159,7 @@ main .nave .mobile .line2 {
   margin-bottom: 6px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background-color: #FFFFFF;
+  background-color: black;
 }
 
 main .nave .mobile .line3 {
@@ -168,7 +168,7 @@ main .nave .mobile .line3 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   margin-bottom: 6px;
-  background-color: #FFFFFF;
+  background-color: black;
 }
 
 main .nave .Big-nav li {

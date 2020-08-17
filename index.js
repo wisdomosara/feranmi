@@ -13,7 +13,7 @@ navLinks.forEach(link => link.addEventListener("click", function() {
     }else {
         nav.style.right = "100%";
         document.querySelector(".logo span").style.color = "#5132C0"
-        document.querySelector(".nave").style.backgroundColor ="rgba(62, 62, 62, 0.473)";
+        document.querySelector(".nave").style.backgroundColor ="rgba(255, 255, 255, 0.5)";
     }
 }))
 function myFunction(x) {
@@ -27,7 +27,7 @@ function myFunction(x) {
     }else {
         nav.style.right = "100%";
         document.querySelector(".logo span").style.color = "#5132C0"
-        document.querySelector(".nave").style.backgroundColor ="rgba(62, 62, 62, 0.473)";
+        document.querySelector(".nave").style.backgroundColor ="rgba(255, 255, 255, 0.5)";
     }
 
     
