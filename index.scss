@@ -31,7 +31,31 @@ body, html{
     margin: 0 auto;
     max-width: 1440px;
 }
+.scrolly-mob{
+    @media (max-width:576px) {
+        background-color: #FFFFFF !important;
+        color: black !important;
+        position: fixed !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        .logo{
+            color: black !important;
+            h2{
+                color: black !important;
+                span{
+                    color: #5132C0
+                }
+            }
+        }
+        .mobile{
+            .line1, .line2, .line3 {
+                background-color: #3E3E3E !important;
+            }
+        }
+    }
+    
+}
 .scrolly{
+    transition: 0.4s;
     @include sm{
         background-color: #FFFFFF !important;
         color: black !important;
@@ -40,9 +64,16 @@ body, html{
         .Big-nav{
             a{
             color: black !important;
+            }
+        
         }
         .logo{
-            color: black !important
+            color: black !important;
+            h2{
+                color: black !important;
+                span{
+                    color: #5132C0
+                }
             }
         }
         
@@ -53,7 +84,7 @@ body, html{
     top:0;
     padding-top:20vh;
     right: 100%;
-    z-index: 100;
+    z-index: 8;
     background-color: #5132C0;
     width: 100%;
     height: 100vh;
@@ -117,24 +148,28 @@ main{
     .nave{
         position: absolute;
         top: 0;
+        transition: 0.4s;
         width: 100%;
         padding-top: -10px;
         background-color: transparent;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-        @media (max-width: 576px) {
-            background-color: rgba(0, 0, 0, 0.479);
-            position: fixed;
-        }
         z-index: 100;
         color: rgb(255, 255, 255);
         .logo{
             font-weight: bolder;
+            z-index: 100;
             h2{
+                color: white;
                 font-weight: bolder;
                 font-size: 18px !important;
                 span{
                 color: #5132C0;
                 font-weight: bolder;
+                }
+                .small-open{
+                    @media (max-width:576px){
+                        color: white !important
+                    }
                 }
             }
         }
@@ -239,7 +274,7 @@ main{
         max-height: 500px !important;
         width: 100%;
         background-color: transparent;
-        z-index: 10;
+        z-index: 3;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -506,4 +541,29 @@ main{
         }
     }
 
+}
+#projects{
+    position: relative;
+    .poster{
+        position: absolute;
+        top: 0;
+        left:0;
+    }
+    .projects-row{
+        padding-top: 70px;
+        @include md {
+            padding-top: 20px;
+        }
+        .projects-text-one{
+        @include md {
+                margin-top: 120px
+            }
+        }
+        .projects-text{
+            height: 300px;
+            width: 100%;
+            background-color: aqua
+        }
+    }
+    
 }

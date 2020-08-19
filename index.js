@@ -9,12 +9,20 @@ navLinks.forEach(link => link.addEventListener("click", function() {
         
         nav.style.right = "0"
         document.querySelector(".nave").style.backgroundColor = "transparent";
-        document.querySelector(".logo span").style.color = "white"
         document.querySelector(".logo").style.color = "white"
     }else {
         nav.style.right = "100%";
         document.querySelector(".logo span").style.color = "#5132C0"
-        document.querySelector(".nave").style.backgroundColor = "rgba(0, 0, 0, 0.479)";
+        document.querySelector(".logo span").classList.remove("small-open")
+        document.querySelector(".nave").style.position = "absolute"
+        let name = document.querySelector(".name")
+
+        let distanceTop =  name.getBoundingClientRect().top;
+        if(distanceTop > 200) {
+            document.querySelector(".nave").classList.remove("scrolly-mob")
+        }else{
+            document.querySelector(".nave").classList.add("scrolly-mob")
+        }
     }
 }))
 function myFunction(x) {
@@ -23,14 +31,24 @@ function myFunction(x) {
     if(clicked) {
         
         nav.style.right = "0"
-        document.querySelector(".logo span").style.color = "white"
-        document.querySelector(".nave").style.backgroundColor ="transparent";
-        document.querySelector(".logo").style.color = "white"
+
+        
+        document.querySelector(".logo span").classList.add("small-open")
+        document.querySelector(".nave").style.backgroundColor = "transparent";
+        document.querySelector(".nave").classList.remove("scrolly-mob")
+        document.querySelector(".nave").style.position = "fixed"
+        
     }else {
         nav.style.right = "100%";
-        document.querySelector(".logo span").style.color = "#5132C0"
-        document.querySelector(".nave").style.backgroundColor ="rgba(0, 0, 0, 0.5)";
-        
+        document.querySelector(".logo span").classList.remove("small-open")
+        let name = document.querySelector(".name")
+        document.querySelector(".nave").style.position = "absolute"
+        let distanceTop =  name.getBoundingClientRect().top;
+        if(distanceTop > 200) {
+            document.querySelector(".nave").classList.remove("scrolly-mob")
+        }else{
+            document.querySelector(".nave").classList.add("scrolly-mob")
+        }
     }
 }
     
@@ -39,8 +57,28 @@ window.addEventListener("scroll", function() {
     let distanceTop = name.getBoundingClientRect().top;
     if(distanceTop < 200 ) {
         document.querySelector(".nave").classList.add("scrolly")
+        document.querySelector(".nave").classList.add("scrolly-mob")
         console.log("in viw")
     }else {
         document.querySelector(".nave").classList.remove("scrolly")
+        document.querySelector(".nave").classList.remove("scrolly-mob")
     }
+})
+window.addEventListener("load", function() {
+    let name = document.querySelector(".name");
+    let distanceTop = name.getBoundingClientRect().top;
+    if(distanceTop < 200 ) {
+        document.querySelector(".nave").classList.add("scrolly")
+        document.querySelector(".nave").classList.add("scrolly-mob")
+        console.log("in viw")
+    }else {
+        document.querySelector(".nave").classList.remove("scrolly")
+        document.querySelector(".nave").classList.remove("scrolly-mob")
+    }
+})
+gsap.from("#about", {
+    duration: 1,
+    x : "-50",
+    ease : "Power2.easeout",
+    scrollTrigger : "#about"
 })
