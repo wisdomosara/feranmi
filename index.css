@@ -695,8 +695,15 @@ main .hero-text .floating-img {
 }
 
 #projects .projects-row .projects-text {
-  height: 300px;
   width: 100%;
-  background-color: aqua;
+}
+
+.active {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
 }
 /*# sourceMappingURL=index.css.map */

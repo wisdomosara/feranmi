@@ -76,9 +76,46 @@ window.addEventListener("load", function() {
         document.querySelector(".nave").classList.remove("scrolly-mob")
     }
 })
-gsap.from("#about", {
-    duration: 1,
-    x : "-50",
-    ease : "Power2.easeout",
-    scrollTrigger : "#about"
-})
+// gsap.from("#about", {
+//     duration: 1,
+//     x : "-50",
+//     ease : "Power2.easeout",
+//     scrollTrigger : "#about"
+// })
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    
+    items:1,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:true,
+        }
+    }
+
+});
+
+
+    lightbox.option({
+      'resizeDuration': 100,
+      'wrapAround': true,
+      'showImageNumberLabel' : false,
+      'imageFadeDuration' : 200,
+      'FadeDuration':200
+
+    })
+    

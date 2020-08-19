@@ -559,11 +559,17 @@ main{
                 margin-top: 120px
             }
         }
+        .projects-slide{
+         
+        }
         .projects-text{
-            height: 300px;
+            
             width: 100%;
-            background-color: aqua
         }
     }
     
+}
+.active{
+    display: flex !important;
+    justify-content: center !important;
 }
