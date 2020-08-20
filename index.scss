@@ -60,6 +60,8 @@ body, html{
         background-color: #FFFFFF !important;
         color: black !important;
         position: fixed !important;
+        max-width: 1440px;
+        margin: 0 auto;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
         .Big-nav{
             a{
@@ -459,6 +461,10 @@ main{
 }
 #skills{
     position: relative;
+    margin-bottom: 50px;
+    @include md {
+        margin-bottom: 100px;
+    }
     .poster{
         position: absolute;
         top: 0;
@@ -543,6 +549,10 @@ main{
 
 }
 #projects{
+    margin-bottom: 50px;
+    @include md {
+        margin-bottom: 100px;
+    }
     position: relative;
     .poster{
         position: absolute;
@@ -552,37 +562,66 @@ main{
     .projects-row{
         padding-top: 70px;
         @include md {
-            padding-top: 20px;
+            padding-top: 50px;
         }
         .projects-text-one{
         @include md {
-                margin-top: 120px
+                margin-top: 120px !important
             }
         }
         .row{
+            .slide1{@include lg{
+                 padding-top: 100px !important
+                } 
+            }
             .projects-slide{
                 @include md{
-                    padding-top: 180px
+                    padding-top: 100px
                 }
                 @include lg{
-                    padding-top: 0
+                    padding-top: 50px
                 }
      
-         .item{
-            display: flex;
-            justify-content: center;
-             img{
-
-                 width: 100%;
+            .item{
+                display: flex;
+                justify-content: center;
+                .img1{
+                    width: 70%;
+                    @include md{
+                        width: 100%
+                    }
                  @include lg{
-                     width: 90%
-                 }
-                 max-height: auto;
-             }
-         }
+                    width: 80%;
+                    }
+                }
+                .img2{
+                    width: 60%;
+                    @include md{
+                        width: 70%
+                    }
+                    @include lg{
+                        width: 60%;
+                        
+                    }
+
+                }
+                .img3{
+                    width: 100%;
+                    @media(max-width: 576px) {
+                        height: auto;
+                    }
+                    @include md {
+                        height: 400px
+                    }
+                    @include lg {
+                         height: 530px;
+                    }
+                   
+                }
+            }
         }
         .projects-text{
-           
+           margin-top: 40px;
             h2{
                 
                 font-family: Open Sans;
@@ -607,6 +646,59 @@ main{
     }
     
 }
-.owl-dot span{
-    margin: -15px 7px !important
+#contact{
+    position: relative;
+    .poster{
+        position: absolute;
+        top: 0;
+        right:0;
+    }
+    .contact-box{
+        padding-top: 50px;
+        @include md{
+            padding-top: 130px;
+        }
+        h5{
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            /* identical to box height */
+
+
+            color: #3E3E3E;
+            @include md{
+                margin: 0;
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 30px;
+
+            color: #3E3E3E
+            }
+            ;
+        }
+    }
+}
+.owl-dot .active span{
+    margin: -5px 7px !important;
+    
+}
+.owl-theme .owl-dots .owl-dot span{
+    background-color: #FFFFFF !important;
+    border: 1px solid #5132C0;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background: #5132C0 !important;
+}
+.owl-theme .owl-dots .owl-dot:hover span{
+    background: rgb(221, 220, 220) !important
+}
+.slide1{
+    .owl-dot span{
+        margin: -25px 7px !important;
+        z-index: 100 !important
+    }
 }
