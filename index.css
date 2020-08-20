@@ -340,15 +340,15 @@ main .hero-text h3 span {
 main .hero-text .stroke-text {
   font-family: Source Sans Pro;
   font-style: normal;
-  font-weight: normal;
-  padding: 0;
-  margin: 0;
+  fontin: 0;
   font-size: 36px;
 }
 
 @media (max-width: 290px) {
   main .hero-text .stroke-text {
-    font-size: 25px;
+    -weight: normal;
+    padding: 0;
+    margfont-size: 25px;
   }
 }
 
@@ -498,8 +498,19 @@ main .hero-text .floating-img {
   }
 }
 
-.profile-text {
+#about {
+  margin-bottom: 50px;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  #about {
+    margin-bottom: 100px !important;
+  }
+}
+
+#about .profile-text {
+  margin-top: 10px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,7 +528,7 @@ main .hero-text .floating-img {
   width: 100%;
 }
 
-.profile-text p {
+#about .profile-text p {
   margin-bottom: 12px;
   font-size: 18px;
   line-height: 23px;
@@ -525,24 +536,24 @@ main .hero-text .floating-img {
 }
 
 @media (min-width: 768px) {
-  .profile-text p {
+  #about .profile-text p {
     width: 60% !important;
   }
 }
 
-.profile-text .poster {
+#about .profile-text .poster {
   position: absolute;
-  top: 14%;
+  top: 0;
   left: 0;
 }
 
 @media (min-width: 768px) {
-  .profile-text .poster {
-    top: 7%;
+  #about .profile-text .poster {
+    top: 0;
   }
 }
 
-.profile-text button {
+#about .profile-text button {
   width: 214px;
   padding: 7px 35px;
   background-color: transparent;
@@ -558,7 +569,7 @@ main .hero-text .floating-img {
 }
 
 @media (min-width: 768px) {
-  .profile-text button {
+  #about .profile-text button {
     width: 262px;
     padding: 15px 35px;
     font-size: 24px;
@@ -583,7 +594,7 @@ main .hero-text .floating-img {
 }
 
 #skills .skills-text {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 @media (min-width: 768px) {
@@ -700,31 +711,35 @@ main .hero-text .floating-img {
 
 @media (min-width: 768px) {
   #projects .projects-row {
-    padding-top: 50px;
+    padding-top: 10px;
   }
 }
 
+#projects .projects-row .row {
+  margin-bottom: 100px !important;
+}
+
 @media (min-width: 768px) {
-  #projects .projects-row .projects-text-one {
-    margin-top: 120px !important;
+  #projects .projects-row .row .projects-text-one {
+    margin-top: 130px !important;
   }
 }
 
 @media (min-width: 992px) {
   #projects .projects-row .row .slide1 {
-    padding-top: 100px !important;
+    padding-top: 60px !important;
   }
 }
 
 @media (min-width: 768px) {
   #projects .projects-row .row .projects-slide {
-    padding-top: 100px;
+    padding-top: 170px !important;
   }
 }
 
 @media (min-width: 992px) {
   #projects .projects-row .row .projects-slide {
-    padding-top: 50px;
+    padding-top: 40px !important;
   }
 }
 
@@ -779,21 +794,14 @@ main .hero-text .floating-img {
   }
 }
 
-@media (min-width: 768px) {
-  #projects .projects-row .row .projects-slide .item .img3 {
-    height: 400px;
-  }
-}
-
-@media (min-width: 992px) {
-  #projects .projects-row .row .projects-slide .item .img3 {
-    height: 530px;
-  }
-}
-
 #projects .projects-row .row .projects-text {
-  margin-top: 40px;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  #projects .projects-row .row .projects-text {
+    margin-top: 60px;
+  }
 }
 
 #projects .projects-row .row .projects-text h2 {

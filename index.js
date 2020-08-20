@@ -76,38 +76,25 @@ window.addEventListener("load", function() {
         document.querySelector(".nave").classList.remove("scrolly-mob")
     }
 })
-// gsap.from("#about", {
-//     duration: 1,
-//     x : "-50",
-//     ease : "Power2.easeout",
-//     scrollTrigger : "#about"
-// })
-
+new WOW().init();
 
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     loop:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
     responsive:{
         0:{
-            items:1
+            items:1,
         },
         600:{
-            items:1
+            items:1,
         },
         1000:{
-            items:1
+            items:1,
         }
     }
 })
-
-
-    lightbox.option({
-      'resizeDuration': 100,
-      'wrapAround': true,
-      'showImageNumberLabel' : false,
-      'imageFadeDuration' : 200,
-      'FadeDuration':200
-
-    })
-    

@@ -301,12 +301,12 @@ main{
         .stroke-text{
             font-family: Source Sans Pro;
             font-style: normal;
-            font-weight: normal;
-            padding: 0;
-            margin: 0;
+            fontin: 0;
             font-size: 36px;
             @media (max-width:290px) {
-                font-size: 25px
+                -weight: normal;
+            padding: 0;
+            margfont-size: 25px
             }
             @include sm {
                 font-size: 40px;
@@ -414,51 +414,59 @@ main{
         font-size: 24px
     }
 }
-.profile-text{
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-    p {margin-bottom: 12px;
-        font-size: 18px;
-        line-height: 23px;
-        color: #3E3E3E;
+#about{
+        margin-bottom: 50px;
         @include md{
-            width: 60% !important;
+            margin-bottom: 100px !important;
         }
-    }
-    .poster{
-        position: absolute;
-        top: 14%;
-        left:0;
-        @include md {
-            top:7%;
+        position: relative;
+        .profile-text{
+            margin-top: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        p {margin-bottom: 12px;
+            font-size: 18px;
+            line-height: 23px;
+            color: #3E3E3E;
+            @include md{
+                width: 60% !important;
+            }
         }
-    }
-    button{
-        width: 214px;
-        padding: 7px 35px;
-        background-color: transparent;
-        border-style: none;
-        margin-top: 20px;
-        border: 1px solid #5132C0;
-        font-family: Source Sans Pro;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 30px;
-        color: #5132C0;
-        @include md{
-            width: 262px;
-            padding: 15px 35px;
-            font-size: 24px
+        .poster{
+            position: absolute;
+            top: 0;
+            left:0;
+            @include md {
+                top:0;
+            }
+        }
+        button{
+            width: 214px;
+            padding: 7px 35px;
+            background-color: transparent;
+            border-style: none;
+            margin-top: 20px;
+            border: 1px solid #5132C0;
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 30px;
+            color: #5132C0;
+            @include md{
+                width: 262px;
+                padding: 15px 35px;
+                font-size: 24px
+            }
         }
     }
 }
+
 #skills{
     position: relative;
     margin-bottom: 50px;
@@ -471,7 +479,7 @@ main{
         right:0;
     }
     .skills-text{
-        padding-top:50px;
+        padding-top:60px;
         @include md{
             padding-top: 124px;
 
@@ -562,24 +570,27 @@ main{
     .projects-row{
         padding-top: 70px;
         @include md {
-            padding-top: 50px;
+            padding-top: 10px;
         }
-        .projects-text-one{
-        @include md {
-                margin-top: 120px !important
-            }
-        }
+        
         .row{
-            .slide1{@include lg{
-                 padding-top: 100px !important
+            margin-bottom: 100px !important;
+            .projects-text-one{
+                @include md {
+                        margin-top: 130px !important
+                    }
+                }
+            .slide1{
+                @include lg{
+                 padding-top: 60px !important
                 } 
             }
             .projects-slide{
                 @include md{
-                    padding-top: 100px
+                    padding-top: 170px !important
                 }
                 @include lg{
-                    padding-top: 50px
+                    padding-top: 40px !important
                 }
      
             .item{
@@ -611,17 +622,19 @@ main{
                         height: auto;
                     }
                     @include md {
-                        height: 400px
+                        
                     }
                     @include lg {
-                         height: 530px;
+                         
                     }
                    
                 }
             }
         }
         .projects-text{
-           margin-top: 40px;
+            @include md{
+                margin-top: 60px;
+            }
             h2{
                 
                 font-family: Open Sans;
