@@ -53,6 +53,7 @@ function myFunction(x) {
 }
     
 window.addEventListener("scroll", function() {
+    
     let name = document.querySelector(".name");
     let distanceTop = name.getBoundingClientRect().top;
     if(distanceTop < 200 ) {
@@ -65,6 +66,8 @@ window.addEventListener("scroll", function() {
     }
 })
 window.addEventListener("load", function() {
+    document.querySelector(".loader").style.display = "none"
+    document.querySelector(".mainn").style.display = "block"
     let name = document.querySelector(".name");
     let distanceTop = name.getBoundingClientRect().top;
     if(distanceTop < 200 ) {

@@ -31,6 +31,19 @@ body, html{
     margin: 0 auto;
     max-width: 1440px;
 }
+.loader{
+    position: fixed;
+    width: 100%;
+    background-color: #5132C0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+.mainn{
+    display: none
+}
 .scrolly-mob{
     @media (max-width:576px) {
         background-color: #FFFFFF !important;
@@ -355,7 +368,7 @@ main{
             margin-bottom: 20px;
             color: #FFFFFF;
         }
-        button{
+        a{
             height: 40px;
             padding:8px 20px;
             background-color: #5132C0;
@@ -366,7 +379,15 @@ main{
                 font-size: 24px;
                 height: 60px
             }
-            margin-bottom: 20px
+            margin-bottom: 20px;
+            button{
+                background-color: transparent;
+                color: white;
+                border:none;
+            }
+            button:focus, button:target{
+                outline: none
+            }
         }
         .icons{
             min-height: 50px !important;

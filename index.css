@@ -5,6 +5,27 @@ body, html {
   max-width: 1440px;
 }
 
+.loader {
+  position: fixed;
+  width: 100%;
+  background-color: #5132C0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.mainn {
+  display: none;
+}
+
 @media (max-width: 576px) {
   .scrolly-mob {
     background-color: #FFFFFF !important;
@@ -417,7 +438,7 @@ main .hero-text p {
   }
 }
 
-main .hero-text button {
+main .hero-text a {
   height: 40px;
   padding: 8px 20px;
   background-color: #5132C0;
@@ -428,10 +449,20 @@ main .hero-text button {
 }
 
 @media (min-width: 576px) {
-  main .hero-text button {
+  main .hero-text a {
     font-size: 24px;
     height: 60px;
   }
+}
+
+main .hero-text a button {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+main .hero-text a button:focus, main .hero-text a button:target {
+  outline: none;
 }
 
 main .hero-text .icons {
