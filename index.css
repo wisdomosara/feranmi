@@ -694,16 +694,60 @@ main .hero-text .floating-img {
   }
 }
 
-#projects .projects-row .projects-text {
+@media (min-width: 768px) {
+  #projects .projects-row .row .projects-slide {
+    padding-top: 180px;
+  }
+}
+
+@media (min-width: 992px) {
+  #projects .projects-row .row .projects-slide {
+    padding-top: 0;
+  }
+}
+
+#projects .projects-row .row .projects-slide .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#projects .projects-row .row .projects-slide .item img {
+  width: 100%;
+  max-height: auto;
+}
+
+@media (min-width: 992px) {
+  #projects .projects-row .row .projects-slide .item img {
+    width: 90%;
+  }
+}
+
+#projects .projects-row .row .projects-text {
   width: 100%;
 }
 
-.active {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+#projects .projects-row .row .projects-text h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+#projects .projects-row .row .projects-text h5 {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #3E3E3E;
+}
+
+.owl-dot span {
+  margin: -15px 7px !important;
 }
 /*# sourceMappingURL=index.css.map */

@@ -559,17 +559,54 @@ main{
                 margin-top: 120px
             }
         }
-        .projects-slide{
-         
+        .row{
+            .projects-slide{
+                @include md{
+                    padding-top: 180px
+                }
+                @include lg{
+                    padding-top: 0
+                }
+     
+         .item{
+            display: flex;
+            justify-content: center;
+             img{
+
+                 width: 100%;
+                 @include lg{
+                     width: 90%
+                 }
+                 max-height: auto;
+             }
+         }
         }
         .projects-text{
-            
+           
+            h2{
+                
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 38px;
+            }
+            h5{
+                font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+
+            color: #3E3E3E;
+            }
             width: 100%;
         }
+        }
+        
     }
     
 }
-.active{
-    display: flex !important;
-    justify-content: center !important;
+.owl-dot span{
+    margin: -15px 7px !important
 }
