@@ -2,6 +2,11 @@ let clicked = false
 let but1 = document.querySelector(".mobile")
 let nav = document.querySelector(".mobile-nav")
 let navLinks = document.querySelectorAll(".mobile-nav ul li a");
+let paths = document.querySelectorAll("#svg path")
+for ( let i = 0; i < paths.length; i ++) {
+    paths[i].style.strokeDasharray = paths[i].getTotalLength()
+    paths[i].style.strokeDashoffset = paths[i].getTotalLength()
+}
 navLinks.forEach(link => link.addEventListener("click", function() {
     clicked = !clicked;
     but1.classList.toggle("close");
@@ -68,11 +73,8 @@ window.addEventListener("scroll", function() {
 window.addEventListener("load", function() {
     document.querySelector(".loader").style.display = "none"
     document.querySelector(".mainn").style.display = "block"
-    let paths = document.querySelectorAll("#svg path")
-for ( let i = 0; i < paths.length; i ++) {
-    paths[i].style.strokeDasharray = paths[i].getTotalLength()
-    paths[i].style.strokeDashoffset = paths[i].getTotalLength()
-    paths[i].style.animation = `line-anim 2.5s ease forwards ${(i+1)/30}s`
+for ( let i = 0; i < paths.length; i++) {
+    paths[i].style.animation = `line-anim 2.5s ease forwards ${(i+1)/20}s`
 }
 new TypeIt(".type", {
     speed: 60

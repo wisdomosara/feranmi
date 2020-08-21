@@ -127,7 +127,12 @@ body, html{
         stroke-dashoffset: 0
     }
 }
-
+@keyframes fil {
+    from {
+        fill: transparent
+    }
+    to {fill: #5132C0}
+}
 main{
     position: relative;
     width: 100%;
@@ -349,12 +354,8 @@ main{
             }
             span{
                 #svg{
-                    stroke: #5132C0;
                     
                     width: 90vw;
-                    path{
-                       animation: filli 1s ease-in-out 2.5s forwards;
-                    }
                     @include sm{
                         width: 360px
                     }
