@@ -349,14 +349,11 @@ main{
                 font-size: 72px
             }
             span{
-                svg{
+                #svg{
                     width: 90vw;
                 
                     @include sm{
                         width: 360px
-                    }
-                path{
-                    animation: fill 0.5s ease forwards 2s;
                     }
                     @include md {
                         width: 430px;

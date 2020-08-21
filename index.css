@@ -434,35 +434,30 @@ main .hero-text .stroke-text span {
   font-family: Source Sans Pro;
 }
 
-main .hero-text .stroke-text span svg {
+main .hero-text .stroke-text span #svg {
   width: 90vw;
 }
 
 @media (min-width: 576px) {
-  main .hero-text .stroke-text span svg {
+  main .hero-text .stroke-text span #svg {
     width: 360px;
   }
 }
 
-main .hero-text .stroke-text span svg path {
-  -webkit-animation: fill 0.5s ease forwards 2s;
-          animation: fill 0.5s ease forwards 2s;
-}
-
 @media (min-width: 768px) {
-  main .hero-text .stroke-text span svg {
+  main .hero-text .stroke-text span #svg {
     width: 430px;
   }
 }
 
 @media (min-width: 992px) {
-  main .hero-text .stroke-text span svg {
+  main .hero-text .stroke-text span #svg {
     width: 550px;
   }
 }
 
 @media (min-width: 1200px) {
-  main .hero-text .stroke-text span svg {
+  main .hero-text .stroke-text span #svg {
     width: 100%;
   }
 }
