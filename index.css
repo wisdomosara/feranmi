@@ -116,6 +116,18 @@ body, html {
   }
 }
 
+@-webkit-keyframes filli {
+  to {
+    fill: #5132C0 !important;
+  }
+}
+
+@keyframes filli {
+  to {
+    fill: #5132C0 !important;
+  }
+}
+
 main {
   position: relative;
   width: 100%;
@@ -372,8 +384,9 @@ main .hero-text h3 span {
 
 main .hero-text .stroke-text {
   font-family: Source Sans Pro;
-  font-style: normal;
+  font-style: bold;
   margin: 0;
+  font-weight: bolder;
   font-size: 36px;
 }
 
@@ -410,14 +423,13 @@ main .hero-text .stroke-text {
   }
 }
 
-main .hero-text .stroke-text span {
-  -webkit-text-stroke: 1px white;
-  -webkit-text-fill-color: transparent;
-  font-family: Source Sans Pro;
-}
-
 main .hero-text .stroke-text span #svg {
   width: 90vw;
+}
+
+main .hero-text .stroke-text span #svg path {
+  -webkit-animation: filli 1s ease-in-out 2.5s forwards;
+          animation: filli 1s ease-in-out 2.5s forwards;
 }
 
 @media (min-width: 576px) {
@@ -466,6 +478,7 @@ main .hero-text p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  width: 100%;
   text-align: center;
   line-height: 30px;
   margin-bottom: 20px;

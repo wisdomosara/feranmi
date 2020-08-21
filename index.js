@@ -66,19 +66,20 @@ window.addEventListener("scroll", function() {
     }
 })
 window.addEventListener("load", function() {
+    document.querySelector(".loader").style.display = "none"
+    document.querySelector(".mainn").style.display = "block"
     let paths = document.querySelectorAll("#svg path")
 for ( let i = 0; i < paths.length; i ++) {
     paths[i].style.strokeDasharray = paths[i].getTotalLength()
     paths[i].style.strokeDashoffset = paths[i].getTotalLength()
-    paths[i].style.animation = `line-anim 3s ease forwards ${(i+1)/20}s`
+    paths[i].style.animation = `line-anim 2.5s ease forwards ${(i+1)/30}s`
 }
 new TypeIt(".type", {
-    speed: 100
+    speed: 60
   })
     .type("I solve problems using digital products.")
     .go();
-    document.querySelector(".loader").style.display = "none"
-    document.querySelector(".mainn").style.display = "block"
+    
     let name = document.querySelector(".name");
     let distanceTop = name.getBoundingClientRect().top;
     if(distanceTop < 200 ) {

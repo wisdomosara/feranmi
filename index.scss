@@ -122,7 +122,11 @@ body, html{
         stroke-dashoffset: 0
     }
 }
-
+@keyframes filli {
+    to {
+        fill: #5132C0 !important
+    }
+}
 main{
     position: relative;
     width: 100%;
@@ -320,8 +324,9 @@ main{
         }
         .stroke-text{
             font-family: Source Sans Pro;
-            font-style: normal;
+            font-style: bold;
             margin: 0;
+            font-weight: bolder;
             font-size: 36px;
             @media (max-width:290px) {
                 font-weight: normal;
@@ -344,7 +349,9 @@ main{
             span{
                 #svg{
                     width: 90vw;
-                
+                    path{
+                       animation: filli 1s ease-in-out 2.5s forwards
+                    }
                     @include sm{
                         width: 360px
                     }
@@ -361,9 +368,6 @@ main{
                         
                     }
                 }
-                -webkit-text-stroke: 1px white;
-                -webkit-text-fill-color: transparent;
-                font-family: Source Sans Pro;
             }
             
         }
@@ -385,6 +389,7 @@ main{
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
+            width: 100%;
             @media (max-width:290px) {
                 font-size: 14px
             }
