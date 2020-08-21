@@ -123,7 +123,9 @@ body, html{
     }
 }
 @keyframes fill {
-    
+    from {
+        fill : transparent
+    }
     to {
         fill: #5132C0
     }
@@ -347,11 +349,14 @@ main{
                 font-size: 72px
             }
             span{
-                svg{animation: fill 0.5s ease forwards 3.5s;
+                svg{
                     width: 90vw;
-                    stroke: #5132C0 !important;
+                
                     @include sm{
                         width: 360px
+                    }
+                path{
+                    animation: fill 0.5s ease forwards 2s;
                     }
                     @include md {
                         width: 430px;

@@ -117,12 +117,18 @@ body, html {
 }
 
 @-webkit-keyframes fill {
+  from {
+    fill: transparent;
+  }
   to {
     fill: #5132C0;
   }
 }
 
 @keyframes fill {
+  from {
+    fill: transparent;
+  }
   to {
     fill: #5132C0;
   }
@@ -429,16 +435,18 @@ main .hero-text .stroke-text span {
 }
 
 main .hero-text .stroke-text span svg {
-  -webkit-animation: fill 0.5s ease forwards 3.5s;
-          animation: fill 0.5s ease forwards 3.5s;
   width: 90vw;
-  stroke: #5132C0 !important;
 }
 
 @media (min-width: 576px) {
   main .hero-text .stroke-text span svg {
     width: 360px;
   }
+}
+
+main .hero-text .stroke-text span svg path {
+  -webkit-animation: fill 0.5s ease forwards 2s;
+          animation: fill 0.5s ease forwards 2s;
 }
 
 @media (min-width: 768px) {
