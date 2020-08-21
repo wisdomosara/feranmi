@@ -5,6 +5,18 @@ body, html {
   max-width: 1440px;
 }
 
+@-webkit-keyframes filli {
+  to {
+    fill: red;
+  }
+}
+
+@keyframes filli {
+  to {
+    fill: red;
+  }
+}
+
 .loader {
   position: fixed;
   width: 100%;
@@ -113,18 +125,6 @@ body, html {
 @keyframes line-anim {
   to {
     stroke-dashoffset: 0;
-  }
-}
-
-@-webkit-keyframes filli {
-  to {
-    fill: #5132C0 !important;
-  }
-}
-
-@keyframes filli {
-  to {
-    fill: #5132C0 !important;
   }
 }
 

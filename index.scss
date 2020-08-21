@@ -31,6 +31,11 @@ body, html{
     margin: 0 auto;
     max-width: 1440px;
 }
+@keyframes filli {
+    to {
+        fill: red;
+    }
+}
 .loader{
     position: fixed;
     width: 100%;
@@ -39,7 +44,7 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white
+    color: white;
 }
 .mainn{
     display: none
@@ -122,11 +127,7 @@ body, html{
         stroke-dashoffset: 0
     }
 }
-@keyframes filli {
-    to {
-        fill: #5132C0 !important
-    }
-}
+
 main{
     position: relative;
     width: 100%;
