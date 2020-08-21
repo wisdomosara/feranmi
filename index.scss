@@ -122,14 +122,7 @@ body, html{
         stroke-dashoffset: 0
     }
 }
-@keyframes fill {
-    from {
-        fill : transparent
-    }
-    to {
-        fill: #5132C0
-    }
-}
+
 main{
     position: relative;
     width: 100%;
