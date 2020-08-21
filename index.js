@@ -70,7 +70,7 @@ window.addEventListener("load", function() {
 for ( let i = 0; i < paths.length; i ++) {
     paths[i].style.strokeDasharray = paths[i].getTotalLength()
     paths[i].style.strokeDashoffset = paths[i].getTotalLength()
-    paths[i].style.animation = `line-anim 3s ease forwards ${(i+1)/20}s`
+    paths[i].style.animation = `line-anim 2s ease forwards`
 }
 // new TypeIt(".type", {
 //     speed: 100
