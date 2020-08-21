@@ -348,9 +348,11 @@ main{
             }
             span{
                 #svg{
+                    stroke: #5132C0;
+                    
                     width: 90vw;
                     path{
-                       animation: filli 1s ease-in-out 2.5s forwards
+                       animation: filli 1s ease-in-out 2.5s forwards;
                     }
                     @include sm{
                         width: 360px

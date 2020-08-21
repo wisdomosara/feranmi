@@ -77,7 +77,6 @@ for ( let i = 0; i < paths.length; i ++) {
 new TypeIt(".type", {
     speed: 60
   })
-    .type("I solve problems using digital products.")
     .go();
     
     let name = document.querySelector(".name");

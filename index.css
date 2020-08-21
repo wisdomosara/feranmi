@@ -424,6 +424,7 @@ main .hero-text .stroke-text {
 }
 
 main .hero-text .stroke-text span #svg {
+  stroke: #5132C0;
   width: 90vw;
 }
 
