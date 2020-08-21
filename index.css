@@ -893,7 +893,7 @@ main .hero-text .floating-img {
 
 @media (max-width: 576px) {
   #projects .projects-row .row .projects-slide .item .img3 {
-    height: auto;
+
   }
 }
 
