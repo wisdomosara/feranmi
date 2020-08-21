@@ -94,6 +94,7 @@ body, html{
         
     }
 }
+
 .mobile-nav{
     position: fixed;
     top:0;
@@ -114,6 +115,17 @@ body, html{
                 color: white;
             }
         }
+    }
+}
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0
+    }
+}
+@keyframes fill {
+    
+    to {
+        fill: #5132C0
     }
 }
 main{
@@ -314,25 +326,46 @@ main{
         .stroke-text{
             font-family: Source Sans Pro;
             font-style: normal;
-            fontin: 0;
+            margin: 0;
             font-size: 36px;
             @media (max-width:290px) {
-                -weight: normal;
+                font-weight: normal;
             padding: 0;
-            margfont-size: 25px
+            font-size: 25px
             }
             @include sm {
                 font-size: 40px;
                 line-height: 91px;
             }
             @include md {
-                font-size: 60px
+                font-size: 50px
             }
-
+            @include lg{
+                font-size: 62px
+            }
             @include xl {
                 font-size: 72px
             }
             span{
+                svg{animation: fill 0.5s ease forwards 3.5s;
+                    width: 90vw;
+                    stroke: #5132C0 !important;
+                    @include sm{
+                        width: 360px
+                    }
+                    @include md {
+                        width: 430px;
+                    
+                    }
+                    @include lg{
+                        
+                        width: 550px
+                    }
+                    @include xl {
+                        width: 100%;
+                        
+                    }
+                }
                 -webkit-text-stroke: 1px white;
                 -webkit-text-fill-color: transparent;
                 font-family: Source Sans Pro;
@@ -425,7 +458,7 @@ main{
 .name{
     padding-top: 50px;
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-weight: normal;
     span{
         font-weight: bolder;

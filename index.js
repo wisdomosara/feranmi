@@ -66,6 +66,12 @@ window.addEventListener("scroll", function() {
     }
 })
 window.addEventListener("load", function() {
+    let paths = document.querySelectorAll("#svg path")
+for ( let i = 0; i < paths.length; i ++) {
+    paths[i].style.strokeDasharray = paths[i].getTotalLength()
+    paths[i].style.strokeDashoffset = paths[i].getTotalLength()
+    paths[i].style.animation = `line-anim 2s ease forwards ${(i+1)/20}s`
+}
     document.querySelector(".loader").style.display = "none"
     document.querySelector(".mainn").style.display = "block"
     let name = document.querySelector(".name");
@@ -101,3 +107,5 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+

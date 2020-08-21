@@ -104,6 +104,30 @@ body, html {
   color: white;
 }
 
+@-webkit-keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes fill {
+  to {
+    fill: #5132C0;
+  }
+}
+
+@keyframes fill {
+  to {
+    fill: #5132C0;
+  }
+}
+
 main {
   position: relative;
   width: 100%;
@@ -361,15 +385,15 @@ main .hero-text h3 span {
 main .hero-text .stroke-text {
   font-family: Source Sans Pro;
   font-style: normal;
-  fontin: 0;
+  margin: 0;
   font-size: 36px;
 }
 
 @media (max-width: 290px) {
   main .hero-text .stroke-text {
-    -weight: normal;
+    font-weight: normal;
     padding: 0;
-    margfont-size: 25px;
+    font-size: 25px;
   }
 }
 
@@ -382,7 +406,13 @@ main .hero-text .stroke-text {
 
 @media (min-width: 768px) {
   main .hero-text .stroke-text {
-    font-size: 60px;
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  main .hero-text .stroke-text {
+    font-size: 62px;
   }
 }
 
@@ -396,6 +426,37 @@ main .hero-text .stroke-text span {
   -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: transparent;
   font-family: Source Sans Pro;
+}
+
+main .hero-text .stroke-text span svg {
+  -webkit-animation: fill 0.5s ease forwards 3.5s;
+          animation: fill 0.5s ease forwards 3.5s;
+  width: 90vw;
+  stroke: #5132C0 !important;
+}
+
+@media (min-width: 576px) {
+  main .hero-text .stroke-text span svg {
+    width: 360px;
+  }
+}
+
+@media (min-width: 768px) {
+  main .hero-text .stroke-text span svg {
+    width: 430px;
+  }
+}
+
+@media (min-width: 992px) {
+  main .hero-text .stroke-text span svg {
+    width: 550px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .hero-text .stroke-text span svg {
+    width: 100%;
+  }
 }
 
 main .hero-text h5 {
@@ -514,7 +575,7 @@ main .hero-text .floating-img {
 .name {
   padding-top: 50px;
   font-size: 18px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   font-weight: normal;
 }
 
