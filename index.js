@@ -72,6 +72,11 @@ for ( let i = 0; i < paths.length; i ++) {
     paths[i].style.strokeDashoffset = paths[i].getTotalLength()
     paths[i].style.animation = `line-anim 2s ease forwards ${(i+1)/20}s`
 }
+new TypeIt(".type", {
+    speed: 50
+  })
+    .type("I solve problems using digital products.")
+    .go();
     document.querySelector(".loader").style.display = "none"
     document.querySelector(".mainn").style.display = "block"
     let name = document.querySelector(".name");
