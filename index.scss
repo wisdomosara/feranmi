@@ -469,7 +469,7 @@ main{
     }
 }
 #about{
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         @include md{
             margin-bottom: 100px !important;
         }
@@ -523,7 +523,7 @@ main{
 
 #skills{
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     @include md {
         margin-bottom: 100px;
     }
