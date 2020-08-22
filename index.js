@@ -71,11 +71,12 @@ window.addEventListener("scroll", function() {
     }
 })
 window.addEventListener("load", function() {
-    document.querySelector(".loader").style.display = "none"
-    document.querySelector(".mainn").style.display = "block"
-for ( let i = 0; i < paths.length; i++) {
+    for ( let i = 0; i < paths.length; i++) {
     paths[i].style.animation = `line-anim 3s ease forwards`
 }
+    document.querySelector(".loader").style.display = "none"
+    document.querySelector(".mainn").style.display = "block"
+
 new TypeIt(".type", {
     speed: 60
   })
