@@ -2,10 +2,16 @@ let clicked = false
 let but1 = document.querySelector(".mobile")
 let nav = document.querySelector(".mobile-nav")
 let navLinks = document.querySelectorAll(".mobile-nav ul li a");
-let paths = document.querySelectorAll("#svg path")
-for ( let i = 0; i < paths.length; i ++) {
-    paths[i].style.strokeDasharray = paths[i].getTotalLength()
-    paths[i].style.strokeDashoffset = paths[i].getTotalLength()
+let pather = document.querySelectorAll("#svg path")
+for ( let i = 0; i < pather.length; i ++) {
+    pather[i].style.strokeDasharray = pather[i].getTotalLength()
+    pather[i].style.strokeDashoffset = pather[i].getTotalLength()
+}
+let pathe = document.querySelectorAll(".loader path")
+for ( let i = 0; i < pathe.length; i++) {
+    pathe[i].style.strokeDasharray = pathe[i].getTotalLength()
+    pathe[i].style.strokeDashoffset = pathe[i].getTotalLength()
+    pathe[i].style.animation = `line-anim 3s ease infinite, fil 3s ease infinite 3s`
 }
 navLinks.forEach(link => link.addEventListener("click", function() {
     clicked = !clicked;
@@ -71,12 +77,14 @@ window.addEventListener("scroll", function() {
     }
 })
 window.addEventListener("load", function() {
-    for ( let i = 0; i < paths.length; i++) {
-    paths[i].style.animation = `line-anim 3s ease forwards ${(i+1)/20}s`
-}
-    document.querySelector(".loader").style.display = "none"
-    document.querySelector(".mainn").style.display = "block"
+   
 
+    document.querySelector("body").removeChild(document.querySelector(".lader"))
+    document.querySelector(".mainn").style.display = "block"
+    let pather = document.querySelectorAll("#svg path")
+    for ( let i = 0; i < pather.length; i++) {
+    pather[i].style.animation = `line-anim 3s ease forwards`
+}
 new TypeIt(".type", {
     speed: 60
   })
