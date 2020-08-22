@@ -36,6 +36,17 @@ body, html{
         fill: red;
     }
 }
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0
+    }
+}
+@keyframes fil {
+    from {
+        fill: transparent
+    }
+    to {fill: white}
+}
 .loader{
     position: fixed;
     width: 100%;
@@ -45,6 +56,92 @@ body, html{
     justify-content: center;
     align-items: center;
     color: white;
+    svg{
+        
+        path:nth-child(1){
+            stroke-dasharray: 185.61590576171875;
+            stroke-dashoffset: 185.61590576171875;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(2){
+            stroke-dasharray: 223.6320037841797;
+            stroke-dashoffset: 223.6320037841797;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(3){
+            stroke-dasharray: 242.1762237548828;
+            stroke-dashoffset: 242.1762237548828;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(4){
+            stroke-dasharray: 220.90798950195312;
+            stroke-dashoffset: 220.90798950195312;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(5){
+            stroke-dasharray: 279.11553955078125;
+            stroke-dashoffset: 279.11553955078125;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(6){
+            stroke-dasharray: 333.67547607421875;
+            stroke-dashoffset: 333.67547607421875;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(7){
+            stroke-dasharray: 115.05596923828125;
+            stroke-dashoffset: 115.05596923828125;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(8){
+            stroke-dasharray: 185.61590576171875;
+            stroke-dashoffset: 185.61590576171875;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(9){
+            stroke-dasharray: 223.6320037841797;
+            stroke-dashoffset: 223.6320037841797;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(10){
+            stroke-dasharray: 242.1762237548828;
+            stroke-dashoffset: 242.1762237548828;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(11){
+            stroke-dasharray: 220.90798950195312;
+            stroke-dashoffset: 220.90798950195312;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(12){
+            stroke-dasharray: 279.11553955078125;
+            stroke-dashoffset: 279.11553955078125;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(13){
+            stroke-dasharray: 333.67547607421875;
+            stroke-dashoffset: 333.67547607421875;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+        path:nth-child(14){
+            stroke-dasharray: 115.05596923828125;
+            stroke-dashoffset: 115.05596923828125;
+            animation: line-anim 3s ease forwards;
+            animation: line-anim 3s ease forwards, fil 3s ease 2.5s;
+        }
+    }
 }
 .mainn{
     display: none
@@ -122,17 +219,7 @@ body, html{
         }
     }
 }
-@keyframes line-anim {
-    to {
-        stroke-dashoffset: 0
-    }
-}
-@keyframes fil {
-    from {
-        fill: transparent
-    }
-    to {fill: white}
-}
+
 main{
     position: relative;
     width: 100%;
@@ -671,7 +758,7 @@ main{
                 display: flex;
                 justify-content: center;
                 .img1{
-                    width: 70%;
+                    width: 90%;
                     @include md{
                         width: 100%
                     }
@@ -680,7 +767,7 @@ main{
                     }
                 }
                 .img2{
-                    width: 60%;
+                    width: 90%;
                     @include md{
                         width: 70%
                     }

@@ -76,9 +76,6 @@ window.addEventListener("scroll", function() {
     }
 })
 window.addEventListener("load", function() {
-    for ( let i = 0; i < pathe.length; i++) {
-        pathe[i].style.animation = `line-anim 3s ease forwards, fil 3s ease forwards 2.5s`
-    }
     setTimeout(function() {
         document.querySelector("body").removeChild(document.querySelector(".loader"))
         document.querySelector(".mainn").style.display = "block"
