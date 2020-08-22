@@ -79,7 +79,7 @@ window.addEventListener("scroll", function() {
 window.addEventListener("load", function() {
    
 
-    document.querySelector("body").removeChild(document.querySelector(".lader"))
+    document.querySelector("body").removeChild(document.querySelector(".loader"))
     document.querySelector(".mainn").style.display = "block"
     let pather = document.querySelectorAll("#svg path")
     for ( let i = 0; i < pather.length; i++) {
