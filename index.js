@@ -7,11 +7,6 @@ for ( let i = 0; i < pather.length; i ++) {
     pather[i].style.strokeDasharray = pather[i].getTotalLength()
     pather[i].style.strokeDashoffset = pather[i].getTotalLength()
 }
-let pathe = document.querySelectorAll(".loader path")
-    for ( let i = 0; i < pathe.length; i++) {
-        pathe[i].style.strokeDasharray = pathe[i].getTotalLength()
-        pathe[i].style.strokeDashoffset = pathe[i].getTotalLength()
-    }
 navLinks.forEach(link => link.addEventListener("click", function() {
     clicked = !clicked;
     but1.classList.toggle("close");
