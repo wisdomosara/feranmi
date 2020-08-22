@@ -74,7 +74,7 @@ window.addEventListener("load", function() {
     document.querySelector(".loader").style.display = "none"
     document.querySelector(".mainn").style.display = "block"
 for ( let i = 0; i < paths.length; i++) {
-    paths[i].style.animation = `line-anim 2.5s ease forwards ${(i+1)/20}s`
+    paths[i].style.animation = `line-anim 3s ease forwards`
 }
 new TypeIt(".type", {
     speed: 60
