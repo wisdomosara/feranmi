@@ -72,7 +72,7 @@ window.addEventListener("scroll", function() {
 })
 window.addEventListener("load", function() {
     for ( let i = 0; i < paths.length; i++) {
-    paths[i].style.animation = `line-anim 3s ease forwards`
+    paths[i].style.animation = `line-anim 3s ease forwards ${(i+1)/20}s`
 }
     document.querySelector(".loader").style.display = "none"
     document.querySelector(".mainn").style.display = "block"
