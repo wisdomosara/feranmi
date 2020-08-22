@@ -344,7 +344,7 @@ main .nave .Big-nav li a {
 
 main .hero-text {
   position: absolute;
-  top: 250px;
+  top: 270px;
   color: white;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -416,38 +416,22 @@ main .hero-text .stroke-text {
   }
 }
 
-@media (min-width: 576px) {
-  main .hero-text .stroke-text {
-    font-size: 40px;
-    line-height: 91px;
-  }
-}
-
-@media (min-width: 768px) {
-  main .hero-text .stroke-text {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 992px) {
-  main .hero-text .stroke-text {
-    font-size: 62px;
-  }
-}
-
-@media (min-width: 1200px) {
-  main .hero-text .stroke-text {
-    font-size: 72px;
-  }
-}
-
 main .hero-text .stroke-text span #svg {
+  margin: 0;
+  padding: 0;
   width: 90vw;
+}
+
+@media (max-width: 576px) {
+  main .hero-text .stroke-text span #svg {
+    padding-top: 18px;
+  }
 }
 
 @media (min-width: 576px) {
   main .hero-text .stroke-text span #svg {
     width: 360px;
+    margin-top: 20px;
   }
 }
 
@@ -459,6 +443,7 @@ main .hero-text .stroke-text span #svg {
 
 @media (min-width: 992px) {
   main .hero-text .stroke-text span #svg {
+    margin-top: 22px;
     width: 550px;
   }
 }
@@ -466,6 +451,37 @@ main .hero-text .stroke-text span #svg {
 @media (min-width: 1200px) {
   main .hero-text .stroke-text span #svg {
     width: 100%;
+  }
+}
+
+main .hero-text .stroke-text h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+}
+
+@media (min-width: 576px) {
+  main .hero-text .stroke-text h1 {
+    font-size: 40px;
+    line-height: 91px;
+  }
+}
+
+@media (min-width: 768px) {
+  main .hero-text .stroke-text h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  main .hero-text .stroke-text h1 {
+    font-size: 62px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .hero-text .stroke-text h1 {
+    font-size: 72px;
   }
 }
 
@@ -550,8 +566,8 @@ main .hero-text .icons img {
 
 main .hero-text .floating-img {
   position: absolute;
-  top: 425px;
-  left: 49.9%;
+  top: 405px;
+  left: 49.5%;
   width: 90px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -567,6 +583,7 @@ main .hero-text .floating-img {
   main .hero-text .floating-img {
     width: 220px;
     top: 540px;
+    left: 49.9%;
   }
 }
 
@@ -806,6 +823,12 @@ main .hero-text .floating-img {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 300px) {
+  #projects .poster {
+    width: 90% !important;
+  }
 }
 
 #projects .projects-row {

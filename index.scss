@@ -295,7 +295,7 @@ main{
     }
     .hero-text{
         position: absolute;
-        top:250px;
+        top:270px;
         color: white;
         transform: translate(-50%,-50%);
         display: flex;
@@ -332,6 +332,7 @@ main{
             font-family: Source Sans Pro;
             font-style: bold;
             margin: 0;
+            
             font-weight: bolder;
             font-size: 36px;
             @media (max-width:290px) {
@@ -339,32 +340,25 @@ main{
             padding: 0;
             font-size: 25px
             }
-            @include sm {
-                font-size: 40px;
-                line-height: 91px;
-            }
-            @include md {
-                font-size: 50px
-            }
-            @include lg{
-                font-size: 62px
-            }
-            @include xl {
-                font-size: 72px
-            }
+            
             span{
                 #svg{
-                    
+                    margin:0;
+                    padding: 0;
+                    @media(max-width:576px) {
+                        padding-top: 18px;
+                    }
                     width: 90vw;
                     @include sm{
-                        width: 360px
+                        width: 360px;
+                        margin-top: 20px;
                     }
                     @include md {
                         width: 430px;
                     
                     }
                     @include lg{
-                        
+                        margin-top: 22px;
                         width: 550px
                     }
                     @include xl {
@@ -372,7 +366,25 @@ main{
                         
                     }
                 }
-            }
+                
+            
+            }h1{margin: 0;
+                padding: 0;
+                font-weight: bolder;
+                    @include sm {
+                        font-size: 40px;
+                        line-height: 91px;
+                    }
+                    @include md {
+                        font-size: 50px
+                    }
+                    @include lg{
+                        font-size: 62px
+                    }
+                    @include xl {
+                        font-size: 72px
+                    }
+                }
             
         }
         h5{
@@ -438,8 +450,8 @@ main{
 
         .floating-img{
             position: absolute;
-            top: 425px;
-            left: 49.9%;
+            top: 405px;
+            left: 49.5%;
             width: 90px;
             @media (max-width:290px) {
                 top: 400px;
@@ -447,6 +459,7 @@ main{
             @include sm {
                 width: 220px;
                 top:540px;
+                left: 49.9%;
             }
             @include md {
                 width: 220px;
@@ -624,6 +637,9 @@ main{
         position: absolute;
         top: 0;
         left:0;
+        @media(max-width:300px) {
+            width: 90% !important;
+        }
     }
     .projects-row{
         padding-top: 70px;

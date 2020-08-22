@@ -11,7 +11,6 @@ let pathe = document.querySelectorAll(".loader path")
     for ( let i = 0; i < pathe.length; i++) {
         pathe[i].style.strokeDasharray = pathe[i].getTotalLength()
         pathe[i].style.strokeDashoffset = pathe[i].getTotalLength()
-        pathe[i].style.animation = `line-anim 3s ease infinite, fil 3s ease infinite 3s`
     }
 navLinks.forEach(link => link.addEventListener("click", function() {
     clicked = !clicked;
@@ -77,51 +76,56 @@ window.addEventListener("scroll", function() {
     }
 })
 window.addEventListener("load", function() {
-   
-
-    document.querySelector("body").removeChild(document.querySelector(".loader"))
-    document.querySelector(".mainn").style.display = "block"
+    for ( let i = 0; i < pathe.length; i++) {
+        pathe[i].style.animation = `line-anim 3s ease forwards, fil 3s ease forwards 2.5s`
+    }
+    setTimeout(function() {
+        document.querySelector("body").removeChild(document.querySelector(".loader"))
+        document.querySelector(".mainn").style.display = "block"
     let pather = document.querySelectorAll("#svg path")
     for ( let i = 0; i < pather.length; i++) {
     pather[i].style.animation = `line-anim 3s ease forwards`
-}
-new TypeIt(".type", {
-    speed: 60
-  })
-    .go();
-    
-    let name = document.querySelector(".name");
-    let distanceTop = name.getBoundingClientRect().top;
-    if(distanceTop < 200 ) {
-        document.querySelector(".nave").classList.add("scrolly")
-        document.querySelector(".nave").classList.add("scrolly-mob")
-        console.log("in viw")
-    }else {
-        document.querySelector(".nave").classList.remove("scrolly")
-        document.querySelector(".nave").classList.remove("scrolly-mob")
     }
-})
-new WOW().init();
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    loop:true,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-        },
-        600:{
-            items:1,
-        },
-        1000:{
-            items:1,
+    new TypeIt(".type", {
+        speed: 60
+      })
+        .go();
+        
+        let name = document.querySelector(".name");
+        let distanceTop = name.getBoundingClientRect().top;
+        if(distanceTop < 200 ) {
+            document.querySelector(".nave").classList.add("scrolly")
+            document.querySelector(".nave").classList.add("scrolly-mob")
+            console.log("in viw")
+        }else {
+            document.querySelector(".nave").classList.remove("scrolly")
+            document.querySelector(".nave").classList.remove("scrolly-mob")
         }
-    }
+        new WOW().init();
+    
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:1,
+            },
+            1000:{
+                items:1,
+            }
+        }
+    })
+    }, 3500)  
+
 })
+
 
 
