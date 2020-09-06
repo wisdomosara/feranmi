@@ -71,6 +71,9 @@ window.addEventListener("scroll", function() {
     }
 })
 window.addEventListener("load", function() {
+    function CV() {
+        console.log("wisdom")
+    }
     setTimeout(function() {
         document.querySelector("body").removeChild(document.querySelector(".loader"))
         document.querySelector(".mainn").style.display = "block"
@@ -94,7 +97,7 @@ window.addEventListener("load", function() {
             document.querySelector(".nave").classList.remove("scrolly-mob")
         }
         new WOW().init();
-    
+   
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
