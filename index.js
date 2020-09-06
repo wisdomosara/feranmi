@@ -79,7 +79,7 @@ window.addEventListener("load", function() {
     pather[i].style.animation = `line-anim 3s ease forwards`
     }
     new TypeIt(".type", {
-        speed: 60
+        speed: 70
       })
         .go();
         

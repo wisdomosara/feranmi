@@ -624,7 +624,7 @@ main .hero-text p {
   }
 }
 
-main .hero-text a {
+main .hero-text .contact-me {
   height: 40px;
   padding: 8px 20px;
   background-color: #5132C0;
@@ -635,19 +635,19 @@ main .hero-text a {
 }
 
 @media (min-width: 576px) {
-  main .hero-text a {
+  main .hero-text .contact-me {
     font-size: 24px;
     height: 60px;
   }
 }
 
-main .hero-text a button {
+main .hero-text .contact-me button {
   background-color: transparent;
   color: white;
   border: none;
 }
 
-main .hero-text a button:focus, main .hero-text a button:target {
+main .hero-text .contact-me button:focus, main .hero-text .contact-me button:target {
   outline: none;
 }
 
@@ -765,9 +765,9 @@ main .hero-text .floating-img {
   left: 0;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 300px) {
   #about .profile-text .poster {
-    top: 0;
+    width: 90% !important;
   }
 }
 
@@ -809,6 +809,12 @@ main .hero-text .floating-img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media (max-width: 300px) {
+  #skills .poster {
+    width: 90% !important;
+  }
 }
 
 #skills .skills-text {
@@ -977,7 +983,7 @@ main .hero-text .floating-img {
 }
 
 #projects .projects-row .row .projects-slide .item .img1 {
-  width: 90%;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -1053,6 +1059,12 @@ main .hero-text .floating-img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media (max-width: 300px) {
+  #contact .poster {
+    width: 90% !important;
+  }
 }
 
 #contact .contact-box {

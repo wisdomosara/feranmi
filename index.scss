@@ -491,7 +491,7 @@ main{
             margin-bottom: 20px;
             color: #FFFFFF;
         }
-        a{
+        .contact-me{
             height: 40px;
             padding:8px 20px;
             background-color: #5132C0;
@@ -586,8 +586,8 @@ main{
             position: absolute;
             top: 0;
             left:0;
-            @include md {
-                top:0;
+            @media(max-width:300px) {
+                width: 90% !important;
             }
         }
         button{
@@ -622,6 +622,9 @@ main{
         position: absolute;
         top: 0;
         right:0;
+        @media(max-width:300px) {
+            width: 90% !important;
+        }
     }
     .skills-text{
         padding-top:60px;
@@ -745,7 +748,7 @@ main{
                 display: flex;
                 justify-content: center;
                 .img1{
-                    width: 90%;
+                    width: 100%;
                     @include md{
                         width: 100%
                     }
@@ -813,6 +816,9 @@ main{
         position: absolute;
         top: 0;
         right:0;
+        @media(max-width:300px) {
+            width: 90% !important;
+        }
     }
     .contact-box{
         padding-top: 50px;
