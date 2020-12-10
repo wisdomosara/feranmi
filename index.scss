@@ -756,10 +756,11 @@ main{
                 display: flex;
                 justify-content: center;
                 width: 100%;
+                max-height: auto;
                 .img1{
                     width: 100%;
                     height: auto;
-                    
+                    max-height: auto;
                     @include md{
                         width: 100%
                     }
@@ -770,7 +771,7 @@ main{
                 .img2{
                     width: 90%;
                     height: auto;
-                    
+                    max-height: auto;
                     @include md{
                         width: 70%
                     }
@@ -783,13 +784,7 @@ main{
                 .img3{
                     width: 100%;
                     height: auto;
-                    
-                    @include md {
-                        
-                    }
-                    @include lg {
-                         
-                    }
+                    max-height: auto;
                    
                 }
             }
