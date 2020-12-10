@@ -759,7 +759,6 @@ main{
                 max-height: auto;
                 .img1{
                     width: 100%;
-                    height: auto;
                     max-height: auto;
                     @include md{
                         width: 100%
@@ -770,10 +769,10 @@ main{
                 }
                 .img2{
                     width: 90%;
-                    height: auto;
                     max-height: auto;
                     @include md{
-                        width: 70%
+                        width: 70%;
+                        max-height: auto;
                     }
                     @include lg{
                         width: 60%;
@@ -783,8 +782,10 @@ main{
                 }
                 .img3{
                     width: 100%;
-                    height: auto;
-                    max-height: auto;
+                    max-height: 240px;
+                    @include md{
+                        max-height: auto;
+                    }
                    
                 }
             }

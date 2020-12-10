@@ -999,7 +999,6 @@ main .hero-text .floating-img {
 
 #projects .projects-row .row .projects-slide .item .img1 {
   width: 100%;
-  height: auto;
   max-height: auto;
 }
 
@@ -1017,13 +1016,13 @@ main .hero-text .floating-img {
 
 #projects .projects-row .row .projects-slide .item .img2 {
   width: 90%;
-  height: auto;
   max-height: auto;
 }
 
 @media (min-width: 768px) {
   #projects .projects-row .row .projects-slide .item .img2 {
     width: 70%;
+    max-height: auto;
   }
 }
 
@@ -1035,8 +1034,13 @@ main .hero-text .floating-img {
 
 #projects .projects-row .row .projects-slide .item .img3 {
   width: 100%;
-  height: auto;
-  max-height: auto;
+  max-height: 240px;
+}
+
+@media (min-width: 768px) {
+  #projects .projects-row .row .projects-slide .item .img3 {
+    max-height: auto;
+  }
 }
 
 #projects .projects-row .row .projects-text {
