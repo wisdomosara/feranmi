@@ -729,7 +729,7 @@ main{
     .projects-row{
         padding-top: 70px;
         @include md {
-            padding-top: 10px;
+            padding-top: 40px;
         }
         
         .row{
@@ -755,10 +755,11 @@ main{
             .item{
                 display: flex;
                 justify-content: center;
+                width: 100%;
                 .img1{
                     width: 100%;
                     height: auto;
-                    object-fit: cover;
+                    
                     @include md{
                         width: 100%
                     }
@@ -769,7 +770,7 @@ main{
                 .img2{
                     width: 90%;
                     height: auto;
-                    object-fit: cover;
+                    
                     @include md{
                         width: 70%
                     }
@@ -782,7 +783,7 @@ main{
                 .img3{
                     width: 100%;
                     height: auto;
-                    object-fit: cover;
+                    
                     @include md {
                         
                     }

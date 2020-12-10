@@ -954,7 +954,7 @@ main .hero-text .floating-img {
 
 @media (min-width: 768px) {
   #projects .projects-row {
-    padding-top: 10px;
+    padding-top: 40px;
   }
 }
 
@@ -993,13 +993,12 @@ main .hero-text .floating-img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 #projects .projects-row .row .projects-slide .item .img1 {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1017,8 +1016,6 @@ main .hero-text .floating-img {
 #projects .projects-row .row .projects-slide .item .img2 {
   width: 90%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1036,8 +1033,6 @@ main .hero-text .floating-img {
 #projects .projects-row .row .projects-slide .item .img3 {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 #projects .projects-row .row .projects-text {
