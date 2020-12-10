@@ -565,14 +565,28 @@ main{
             margin-bottom: 100px !important;
         }
         position: relative;
+        .poster{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-top: -30px;
+            transform: translateX(-50%);
+            
+            @media(max-width:300px) {
+                width: 90% !important;
+            }
+        }
         .profile-text{
-            margin-top: 10px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+            @include md{
+                margin-top: 100px !important;
+            };
+            margin-top: 70px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
         
         p {margin-bottom: 12px;
             font-size: 18px;
@@ -580,14 +594,6 @@ main{
             color: #3E3E3E;
             @include md{
                 width: 60% !important;
-            }
-        }
-        .poster{
-            position: absolute;
-            top: 0;
-            left:0;
-            @media(max-width:300px) {
-                width: 90% !important;
             }
         }
         button{
@@ -621,7 +627,8 @@ main{
     .poster{
         position: absolute;
         top: 0;
-        right:0;
+        left:50%;
+        transform: translateX(-50%);
         @media(max-width:300px) {
             width: 90% !important;
         }
@@ -713,7 +720,8 @@ main{
     .poster{
         position: absolute;
         top: 0;
-        left:0;
+        left:50%;
+        transform: translateX(-50%);
         @media(max-width:300px) {
             width: 90% !important;
         }
@@ -749,6 +757,8 @@ main{
                 justify-content: center;
                 .img1{
                     width: 100%;
+                    height: auto;
+                    object-fit: cover;
                     @include md{
                         width: 100%
                     }
@@ -758,6 +768,8 @@ main{
                 }
                 .img2{
                     width: 90%;
+                    height: auto;
+                    object-fit: cover;
                     @include md{
                         width: 70%
                     }
@@ -769,9 +781,8 @@ main{
                 }
                 .img3{
                     width: 100%;
-                    @media(max-width: 576px) {
-                        height: auto;
-                    }
+                    height: auto;
+                    object-fit: cover;
                     @include md {
                         
                     }
@@ -815,7 +826,8 @@ main{
     .poster{
         position: absolute;
         top: 0;
-        right:0;
+        left:50%;
+        transform: translateX(-50%);
         @media(max-width:300px) {
             width: 90% !important;
         }
@@ -833,7 +845,10 @@ main{
             line-height: 20px;
             /* identical to box height */
 
-
+            a{
+                color: #3E3E3E;
+                text-decoration: none !important
+            };
             color: #3E3E3E;
             @include md{
                 margin: 0;

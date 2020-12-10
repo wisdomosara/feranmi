@@ -727,8 +727,23 @@ main .hero-text .floating-img {
   }
 }
 
+#about .poster {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-top: -30px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (max-width: 300px) {
+  #about .poster {
+    width: 90% !important;
+  }
+}
+
 #about .profile-text {
-  margin-top: 10px;
+  margin-top: 70px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -746,6 +761,12 @@ main .hero-text .floating-img {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  #about .profile-text {
+    margin-top: 100px !important;
+  }
+}
+
 #about .profile-text p {
   margin-bottom: 12px;
   font-size: 18px;
@@ -756,18 +777,6 @@ main .hero-text .floating-img {
 @media (min-width: 768px) {
   #about .profile-text p {
     width: 60% !important;
-  }
-}
-
-#about .profile-text .poster {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-@media (max-width: 300px) {
-  #about .profile-text .poster {
-    width: 90% !important;
   }
 }
 
@@ -808,7 +817,9 @@ main .hero-text .floating-img {
 #skills .poster {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (max-width: 300px) {
@@ -926,7 +937,9 @@ main .hero-text .floating-img {
 #projects .poster {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (max-width: 300px) {
@@ -984,6 +997,9 @@ main .hero-text .floating-img {
 
 #projects .projects-row .row .projects-slide .item .img1 {
   width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1000,6 +1016,9 @@ main .hero-text .floating-img {
 
 #projects .projects-row .row .projects-slide .item .img2 {
   width: 90%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1016,12 +1035,9 @@ main .hero-text .floating-img {
 
 #projects .projects-row .row .projects-slide .item .img3 {
   width: 100%;
-}
-
-@media (max-width: 576px) {
-  #projects .projects-row .row .projects-slide .item .img3 {
-    height: auto;
-  }
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #projects .projects-row .row .projects-text {
@@ -1058,7 +1074,9 @@ main .hero-text .floating-img {
 #contact .poster {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (max-width: 300px) {
@@ -1085,6 +1103,11 @@ main .hero-text .floating-img {
   line-height: 20px;
   /* identical to box height */
   color: #3E3E3E;
+}
+
+#contact .contact-box h5 a {
+  color: #3E3E3E;
+  text-decoration: none !important;
 }
 
 @media (min-width: 768px) {
