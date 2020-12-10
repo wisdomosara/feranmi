@@ -994,52 +994,67 @@ main .hero-text .floating-img {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  max-height: auto;
 }
 
 #projects .projects-row .row .projects-slide .item .img1 {
   width: 100%;
-  max-height: auto;
+  max-height: 400px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 @media (min-width: 768px) {
   #projects .projects-row .row .projects-slide .item .img1 {
     width: 100%;
+    max-height: unset !important;
+    -o-object-fit: initial;
+       object-fit: initial;
   }
 }
 
 @media (min-width: 992px) {
   #projects .projects-row .row .projects-slide .item .img1 {
     width: 80%;
+    max-height: unset !important;
   }
 }
 
 #projects .projects-row .row .projects-slide .item .img2 {
   width: 90%;
-  max-height: auto;
+  max-height: 400px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 @media (min-width: 768px) {
   #projects .projects-row .row .projects-slide .item .img2 {
     width: 70%;
-    max-height: auto;
+    height: auto !important;
+    max-height: unset !important;
+    -o-object-fit: initial;
+       object-fit: initial;
   }
 }
 
 @media (min-width: 992px) {
   #projects .projects-row .row .projects-slide .item .img2 {
     width: 60%;
+    max-height: unset !important;
   }
 }
 
 #projects .projects-row .row .projects-slide .item .img3 {
   width: 100%;
-  max-height: 240px;
+  max-height: 400px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 @media (min-width: 768px) {
   #projects .projects-row .row .projects-slide .item .img3 {
-    max-height: auto;
+    max-height: unset !important;
+    -o-object-fit: initial;
+       object-fit: initial;
   }
 }
 
